@@ -1176,8 +1176,6 @@ function initScrolltriggerAnimations() {
   });
   }
 
-  
-
   // Scrolltrigger Animation : Span Lines Intro Home
   if(document.querySelector(".span-lines.animate")) {
   $(".span-lines.animate").each(function (index) {
@@ -1272,6 +1270,8 @@ function initScrolltriggerAnimations() {
     });
   });
   }
+
+
 
   // Disable GSAP on Mobile
   // Source: https://greensock.com/forums/topic/26325-disabling-scrolltrigger-on-mobile-with-mediamatch/
