@@ -920,7 +920,7 @@ main {
    position: absolute;
    top: 46%;
    left: 1%;
-   background-color: #C64333;
+   background-color: #EB5D3F;
    border: none;
    box-shadow: none;
    outline: none;
@@ -934,7 +934,7 @@ main {
    position: absolute;
    top: 46%;
    right: 1%;
-   background-color: #C64333;
+   background-color: #EB5D3F;
    height: 80px;
    width: 80px;
    border-radius: 50%;
@@ -1190,7 +1190,7 @@ main {
  }
 
  .about__title{
-   color: #C64333;
+   color: #EB5D3F;
  }
  
  .home-intro .row.secondary {
