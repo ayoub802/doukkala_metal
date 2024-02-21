@@ -114,8 +114,8 @@ main {
  .loading-container .loading-words {
     position: absolute;
     top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    left: 20%;
+    transform: translate(-20%, -50%);
     /* opacity: 0; */
     pointer-events: none;
     display: block;
@@ -200,7 +200,7 @@ main {
     justify-content:center;
     text-transform: uppercase;
    line-height: .5rem;
-   color: #e60000;
+   color: var(--orange);
    animation: scroll-and 2s cubic-bezier(.5,.5,0,1) both;
  }
  
