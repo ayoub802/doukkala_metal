@@ -1383,7 +1383,7 @@ main {
  }
  
  .large-work-grid .work-items h4 {
-    font-size: calc(clamp(3.25em, 7vw, 8em) * .75);
+    font-size: 3em;
  }
  
  .large-work-grid .row { 
@@ -2166,6 +2166,7 @@ main {
 
  .work_container .flex-col img{
    transition: all .3s ease-out;
+   height: 100%;
  }
 
  .work_container .flex-col:hover img{
@@ -2650,7 +2651,7 @@ main {
  }
  
  .horizontal-items .flex-col {
-    width: 25%;
+    width: 16.5%;
     padding: calc(var(--gap-padding) / 2);
     padding: 1.25vw;
     will-change: transform;
@@ -3473,3 +3474,68 @@ main {
     margin-right: 0;
  }
  
+
+ /* ------------------ ABOUT - ABOUT PAGE ----------------------- */
+ .about__section{
+   background-color: var(--color-white);
+ }
+
+ .about__section .hero__title{
+   color: var(--color-dark) !important;
+ }
+
+
+
+
+ /* ---------------- HEADER - ABOUT PAGE --------------- */
+ .about__page .social__media-container i,  .about__page .btn-text-inner{
+   color: var(--color-dark);
+ }
+
+ .theme-dark .btn-link .btn-click::after{
+   background-color: var(--color-dark);
+ }
+
+ .about__text{
+   max-width: max-content !important;
+   margin-bottom: 1em !important;
+ }
+
+ .loading-words .active__home{
+   display: none;
+ }
+
+ 
+ /* ------------------ HEADER - WORK PAGE  ----------------------- */
+ .work__page .social__media-container i{
+   color: var(--color-dark);
+ }
+
+
+  /* ------------------ MOUSE - WORK PAGE  ----------------------- */
+
+  .work__page .mouse-pos-list-btn{
+   background-color: var(--orange);
+  }
+
+
+  /* ------------------ FORM - CONTACT PAGE  ----------------------- */
+  .form-col{
+   padding:1em 1.2em;
+  }
+
+  .contact-header .row:nth-child(2) .links-wrap{
+   padding-bottom: 0 !important;
+  }
+.contact-title{
+   position: initial !important;
+   font-family: 'Doukkal Sans', sans-serif;
+   font-weight: 450;
+   font-style: normal;
+   font-size: .6em;
+   line-height: 1.065;
+   margin-bottom: 1em;
+   text-transform: uppercase;
+   letter-spacing: .05em;
+   opacity: .5;
+}

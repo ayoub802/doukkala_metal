@@ -1,0 +1,627 @@
+
+<!DOCTYPE html><!--  This site was created by Dennis Snellenberg (Code by Dennis)  -->
+<html lang="en">
+   <head>
+      <meta charset="utf-8"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1"/>
+      <title>Doukala - Website</title>
+      <link rel="canonical" href="#"/>
+      <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+      />
+      <link rel="shortcut icon" href="assets/favicon-32x32.png" type="image/x-icon">
+
+      <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+      />
+      <link rel="preload" as="font" href="fonts/NeueMontreal-Regular.otf" type="font/otf" crossorigin="anonymous">
+
+      <link href="styles/normalize.css" rel="stylesheet">      
+      <link href="styles/locomotive-scroll.css" rel="stylesheet">      
+      <link href="styles/styleguide.css" rel="stylesheet">      
+      <link href="styles/components.css" rel="stylesheet">      
+      <!-- <link href="styles/style.css" rel="stylesheet">       -->
+      <link href="styles/style-new.css" rel="stylesheet">
+		<script>
+         window.dataLayer = window.dataLayer || [];
+         function gtag(){dataLayer.push(arguments);}
+         gtag('js', new Date());
+         gtag('set', 'page', window.location.pathname);
+         gtag('send', 'pageview');
+         
+         gtag('config', 'G-SGWQQRQ15Y');
+		</script>
+
+        
+		<style>
+			*
+.gallery h1 {
+	font-size:clamp(2em, 4vw, 6em);
+}
+
+.gallery p {
+	font-size:clamp(1.4em, 2.5vw, 3.5em);
+	line-height:1.4;
+}
+
+
+.gallery {
+  display:flex;	
+  /* outline:1px solid red; */
+}
+
+.left {
+	width:50%;
+}
+
+.right {
+	height:100vh;
+	/* outline:1px solid purple; */
+	width:50%;
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+}
+
+.desktopContent {
+	margin:auto;
+	width:80%;
+}
+
+.desktopContentSection {
+	min-height:100vh;
+	/* outline:1px solid green; */
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+}
+
+
+.desktopPhotos {
+	width:40vw;
+	height:40vw;
+	border-radius:20px;
+	position:relative;
+	overflow:hidden;
+	box-shadow:4px 4px 4px rgba(0, 0, 0, 0.4);
+}
+
+.desktopPhoto {
+	position:absolute;
+	width:100%;
+	height:100%;
+}
+
+
+
+
+.red {
+	background: crimson;
+}
+
+.green {
+	background:MediumSeaGreen;
+}
+
+.blue {
+	background:dodgerblue;
+}
+
+.pink{
+	background:deepPink;
+}
+
+
+/* small screen / mobile layout */
+.mobileContent {
+	display:none;
+	width:80vw;
+}
+
+.mobilePhoto {
+	width:80vw;
+	height:80vw;
+	margin-top:5em;
+	border-radius:6vw;
+}
+
+
+
+
+
+
+/* defines styles for screens up to 599px wide */
+@media screen and (max-width: 599px) {
+	.left {
+		display:none;
+	}
+	
+	.right {
+		height:auto;
+		width:100%;
+		align-items:center;	
+	}	
+	
+	.desktopPhotos {
+		display:none;
+	}
+	
+	.mobileContent {
+		display:block;
+	}
+	
+
+}
+
+
+		</style>
+
+      
+   </head>
+ 
+    <body data-barba="wrapper">
+        <div class="no-scroll-overlay"></div>
+        <div class="loading-container">
+            <div class="loading-screen">
+                <div class="rounded-div-wrap top">
+                    <div class="rounded-div"></div>
+                </div>
+                <div class="loading-words">
+
+                    <h2 class="active">About<div class="dot"></div></h2>
+                </div>
+                <div class="rounded-div-wrap bottom">
+                    <div class="rounded-div"></div>
+                </div>
+            </div>
+        </div>
+
+        <main class="main" id="about" data-barba="container" data-barba-namespace="work" >
+            <div class="mouse-pos-list-image no-select">
+                <div class="mouse-pos-list-image-bounce overlay">
+                    <div class="float-image-wrap">
+                        <li class="mouse-pos-list-image-inner design development interaction visible">
+                            <div class="overlay overlay-image lazy" style="background-color: #48494A; background-position: center center; background-repeat: no-repeat; background-size: cover;" data-bg="./assets/home_banner.jpg"></div>                        </li>
+                       <li class="mouse-pos-list-image-inner design development interaction visible">
+                            <div class="overlay overlay-image lazy" style="background-color: #101010; background-position: center center; background-repeat: no-repeat; background-size: cover;" data-bg="./assets/home_banner.jpg"></div>                        </li>
+                        <li class="mouse-pos-list-image-inner development interaction design visible">
+                            <div class="overlay overlay-image lazy" style="background-color: #363637; background-position: center center; background-repeat: no-repeat; background-size: cover;" data-bg="./assets/home_banner.jpg"></div>                        </li>
+                        <li class="mouse-pos-list-image-inner design development interaction visible">
+                            <div class="overlay overlay-image lazy" style="background-color: #D8D3CD; background-position: center center; background-repeat: no-repeat; background-size: cover;" data-bg="./assets/home_banner.jpg"></div>                        
+                        </li>
+                    </div>
+                </div>
+            </div>
+
+            <!-- <div class="mouse-pos-list-btn no-select"></div> -->
+            <!-- <div class="mouse-pos-list-span no-select"><p>View</p></div> -->
+            <div class="btn btn-hamburger">
+                <div class="btn-click magnetic" data-strength="50" data-strength-text="25">
+                    <div class="btn-fill"></div>
+                    <div class="btn-text">
+                        <div class="btn-bars"></div>
+                        <span class="btn-text-inner">Menu</span>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="overlay fixed-nav-back"></div>
+
+            <div class="fixed-nav theme-dark">
+                <div class="fixed-nav-rounded-div">
+                    <div class="rounded-div-wrap">
+                        <div class="rounded-div"></div>
+                    </div>
+                </div>
+                <div class="fixed-nav-inner">
+                    <div class="row nav-row">
+                        <h5>Navigation</h5>
+                        <div class="stripe"></div>
+                        <ul class="links-wrap">
+                            <li class="btn btn-link">
+                                <a href="index.html" class="btn-click magnetic" data-strength="24" data-strength-text="12">
+                                <span class="btn-text">
+                                    <span class="btn-text-inner">Home</span>
+                                </span>
+                                </a>
+                            </li>
+                            <li class="btn btn-link">
+                                <a href="work.html" class="btn-click magnetic" data-strength="24" data-strength-text="12">
+                                <span class="btn-text">
+                                    <span class="btn-text-inner">Work</span>
+                                </span>
+                                </a>
+                            </li>
+                            <li class="btn btn-link active">
+                                <a href="about.html" class="btn-click magnetic" data-strength="24" data-strength-text="12">
+                                <span class="btn-text">
+                                    <span class="btn-text-inner">About</span>
+                                </span>
+                                </a>
+                            </li>
+                            <li class="btn btn-link">
+                                <a href="contact.html" class="btn-click magnetic" data-strength="24" data-strength-text="12">
+                                <span class="btn-text">
+                                    <span class="btn-text-inner">Contact</span>
+                                </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="row social-row">
+                        <div class="stripe"></div>
+                        <div class="socials">
+                            <h5>Socials</h5>
+                            <ul>
+                                <li class="btn btn-link btn-link-external">
+                                    <a href="#" target="_blank" class="btn-click magnetic" data-strength="20" data-strength-text="10">
+                                        <span class="btn-text">
+                                            <span class="btn-text-inner">Twitter X</span>
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="btn btn-link btn-link-external">
+                                    <a href="#" target="_blank" class="btn-click magnetic" data-strength="20" data-strength-text="10">
+                                        <span class="btn-text">
+                                            <span class="btn-text-inner">Instagram</span>
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="btn btn-link btn-link-external">
+                                    <a href="#" target="_blank" class="btn-click magnetic" data-strength="20" data-strength-text="10">
+                                        <span class="btn-text">
+                                            <span class="btn-text-inner">Linkedin</span>
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="btn btn-link btn-link-external">
+                                    <a href="#" target="_blank" class="btn-click magnetic" data-strength="20" data-strength-text="10">
+                                        <span class="btn-text">
+                                            <span class="btn-text-inner">Facebook</span>
+                                        </span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="main-wrap" data-scroll-container>
+               
+
+               <section class="home-header about__page theme-dark" data-scroll-section>
+                <!-- <div class="overlay personal-image no-select once-in" data-scroll data-scroll-speed="-3" data-scroll-position="top">
+                </div> -->
+
+                    <div class="header__container">
+                        <div class="social__media-container">
+                            <a href="#" class="social_btn magnetic" data-strength="20" data-strength-text="10">
+                                <i class="fa-brands fa-x-twitter"></i>
+                            </a>
+                            <a href="#" class="social_btn magnetic" data-strength="20" data-strength-text="10">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                            <a href="#" class="social_btn magnetic" data-strength="20" data-strength-text="10">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </a>
+                            <a href="#" class="social_btn magnetic" data-strength="20" data-strength-text="10">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+                        </div>
+                                
+                        <a href="index.html" class="logo_doukkal">
+                            <img src="assets/LOGO DOUKKALA METAL NOIR.svg"/>
+                        </a>
+                        <ul class="links-wrap">
+                            <li class="btn btn-link">
+                                <a href="work.html" class="btn-click magnetic" data-strength="20" data-strength-text="10">
+                                <span class="btn-text">
+                                    <span class="btn-text-inner">Work</span>
+                                </span>
+                                </a>
+                            </li>
+                            <li class="btn btn-link">
+                                <a href="about.html" class="btn-click magnetic" data-strength="20" data-strength-text="10">
+                                <span class="btn-text">
+                                    <span class="btn-text-inner">About</span>
+                                </span>
+                                </a>
+                            </li>
+                            <li class="btn btn-link">
+                                <a href="contact.html" class="btn-click magnetic" data-strength="20" data-strength-text="10">
+                                <span class="btn-text">
+                                    <span class="btn-text-inner">Contact</span>
+                                </span>
+                                </a>
+                            </li>
+                            <li class="btn btn-link btn-menu">
+                                <div class="btn-click magnetic" data-strength="20" data-strength-text="10">
+                                    <div class="btn-text">
+                                        <span class="btn-text-inner">Menu</span>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+
+                    <div class="about__section" style="width: 100%;" data-scroll data-scroll-speed="-3" data-scroll-position="top">
+                        <div class="container home_content once-in once-in-secondary">
+                            <div class="row">
+                                <div class="flex-col">
+                                    <div class="header-above-h4" data-scroll data-scroll-speed="1">
+                                    </div>
+                                    <h4 class="hero__title">
+                                     doukkala<br>mettal
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+               </section>
+
+
+
+                <section class="section home-intro" data-scroll-section>
+                    <div class="container medium">
+                        <div class="row">
+                            <div class="flex-col">
+                                <div class="about__title">
+                                <h4>OUR STORY</h4>
+                                </div>
+                                <!-- <div class="btn btn-round" data-scroll data-scroll-speed="2">
+                                <a href="about.html" class="btn-click magnetic " data-strength="100" data-strength-text="50">
+                                    <div class="btn-fill"></div>
+                                    <span class="btn-text">
+                                        <span class="btn-text-inner">About me</span>
+                                    </span>
+                                </a>
+                                </div> -->
+                            </div>
+                            <div class="flex-col">
+                                <!-- <h4 class="span-lines animate">Infinity Constructions Group has been operating for over 30
+                                    years. We are a Tier 2 commercial construction company active
+                                    in all sectors of the industry. Infinity Constructions operates
+                                    primarily in the Sydney and Melbourne markets.
+                                </h4> -->
+                                <h4 class="span-texts animate">Our clients choose to work with us because of our deep knowledge of the construction industry and the very high standard
+                                    construction we produce. We are a professional, trusted and valued contributor to all stages of the design and construction
+                                    process.</h4>
+                                <!-- <h4 class="span-lines animate" style="margin-top: 25px;">
+                                    “We have built our reputation as a quality builder that places
+                                    outstanding customer service at the heart of our business. We
+                                    are motivated by delivering excellence for our clients.”
+                                </h4> -->
+                                <p class="about__text">Our clients choose to work with us because of our deep knowledge of the construction industry and the very high standard
+                                    construction we produce. We are a professional, trusted and valued contributor to all stages of the design and construction
+                                    process.</p>
+                                <p class="about__text">Our clients choose to work with us because of our deep knowledge of the construction industry and the very high standard
+                                    construction we produce. We are a professional, trusted and valued contributor to all stages of the design and construction
+                                    process.</p>
+
+                            </div>
+
+                        </div>
+
+                        <div class="row secondary">
+                            <div class="flex-col">
+                                <img src="assets/Frame-12.webp" class="about__content-image"/>
+                            </div>
+                            <div class="flex-col">
+                                <ul class="about__content-exp">
+                                    <li>
+                                    <div animate class="num_exp">
+                                            <h3>30</h3>
+                                            <h2>+</h2>
+                                    </div>
+                                    <h2>years experience</h2>
+                                    <div class="stripe animate"></div>
+                                    </li>
+                                    <li>
+                                    <div class="num_exp">
+                                            <h3>500</h3>
+                                            <h2>+</h2>
+                                    </div>
+                                    <h2>projects built</h2>
+                                    <div class="stripe animate"></div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
+
+                <div class="footer-rounded-div" data-scroll-section>
+                    <div class="rounded-div-wrap">
+                        <div class="rounded-div"></div>
+                    </div>
+                </div>
+
+                <div class="footer-wrap footer-footer-wrap theme-dark" data-scroll-section>
+                    <footer class="section footer" data-scroll data-scroll-speed="-4" data-scroll-position="bottom">
+                        <div class="container medium">
+                            <div class="row">
+                                <div class="flex-col">
+                                    <div class="arrow"><?xml version="1.0" encoding="UTF-8"?>
+                                <svg width="14px" height="14px" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <title>arrow-up-right</title>
+                                    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                        <g id="Artboard" transform="translate(-1019.000000, -279.000000)" stroke="#FFFFFF" stroke-width="1.5">
+                                            <g id="arrow-up-right" transform="translate(1026.000000, 286.000000) rotate(90.000000) translate(-1026.000000, -286.000000) translate(1020.000000, 280.000000)">
+                                                <polyline id="Path" points="2.76923077 0 12 0 12 9.23076923"></polyline>
+                                                <line x1="12" y1="0" x2="0" y2="12" id="Path"></line>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </svg></div>
+                                    <h2><span><div class="profile-picture"></div> Let’s work  </span><span>together</span></h2>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="flex-col">
+                                    <div class="stripe"></div>
+                                    <div class="btn-fixed">
+                                        <div class="btn btn-round" data-scroll data-scroll-speed="-1" data-scroll-direction="horizontal" data-scroll-position="bottom" data-scroll-offset="-50%, 0">
+                                            <a href="contact.html" class="btn-click magnetic " data-strength="100" data-strength-text="50">
+                                                <div class="btn-fill"></div>
+                                                <span class="btn-text">
+                                                    <span class="btn-text-inner">Get in touch</span>
+                                                </span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="flex-col">
+                                    <div class="btn btn-normal">
+                                        <a href="#" class="btn-click magnetic" data-strength="25" data-strength-text="15">
+                                        <div class="btn-fill"></div>
+                                        <span class="btn-text">
+                                            <span class="btn-text-inner change">doukkal@gmail.com</span>
+                                        </span>
+                                        </a>
+                                    </div>
+                                    <div class="btn btn-normal">
+                                        <a href="tel:+31627847430" class="btn-click magnetic" data-strength="25" data-strength-text="15">
+                                        <div class="btn-fill"></div>
+                                        <span class="btn-text">
+                                            <span class="btn-text-inner change">+212 601 02030500</span>
+                                        </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container no-padding">
+                            <div class="row bottom-footer">
+                                <div class="flex-col">
+                                    <div class="credits">
+                                        <h5>Edited By</h5>
+                                        <a href="" style="text-transform: uppercase; color: #fff;">WHD Agency</a>
+                                    </div>
+                                </div>
+                                <div class="flex-col">
+                                    <div class="socials">
+                                        <h5>Socials</h5>
+                                        <ul>
+                                            <li class="btn btn-link btn-link-external">
+                                                <a href="#" target="_blank" class="btn-click magnetic" data-strength="20" data-strength-text="10">
+                                                    <span class="btn-text">
+                                                        <span class="btn-text-inner">Twitter X</span>
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li class="btn btn-link btn-link-external">
+                                                <a href="#" target="_blank" class="btn-click magnetic" data-strength="20" data-strength-text="10">
+                                                    <span class="btn-text">
+                                                        <span class="btn-text-inner">Instagram</span>
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li class="btn btn-link btn-link-external">
+                                                <a href="#" target="_blank" class="btn-click magnetic" data-strength="20" data-strength-text="10">
+                                                    <span class="btn-text">
+                                                        <span class="btn-text-inner">Linkedin</span>
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li class="btn btn-link btn-link-external">
+                                                <a href="#" target="_blank" class="btn-click magnetic" data-strength="20" data-strength-text="10">
+                                                    <span class="btn-text">
+                                                        <span class="btn-text-inner">Facebook</span>
+                                                    </span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <div class="stripe"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </footer>
+                    <div class="overlay overlay-gradient"></div>
+                </div>
+
+
+            </div>
+        </main>
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.2.0/js.cookie.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script> 
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@barba/core"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.6.1/dist/lazyload.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script src="https://kit.fontawesome.com/dbfca54b0d.js" crossorigin="anonymous"></script>
+        <script src="js/locomotive-scroll.min.js"></script>        
+        <script defer src="js/script.js"></script> 
+        <script defer src="js/index-new.js"></script> 
+        <script src="https://unpkg.com/split-type"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+       
+        <script>
+			window.onload = () => {
+				const details = gsap.utils.toArray(".desktopContentSection:not(:first-child)")
+                const photos = gsap.utils.toArray(".desktopPhoto:not(:first-child)")
+
+
+                gsap.set(photos, {yPercent:101})
+
+                const allPhotos = gsap.utils.toArray(".desktopPhoto")
+
+
+                // create
+                let mm = gsap.matchMedia();
+
+                // add a media query. When it matches, the associated function will run
+                mm.add("(min-width: 600px)", () => {
+
+                // this setup code only runs when viewport is at least 600px wide
+                console.log("desktop")
+                    
+                ScrollTrigger.create({
+                    trigger:".gallery",
+                    start:"top top",
+                    end:"bottom bottom",
+                    pin:".right"
+                })
+
+                //create scrolltrigger for each details section
+                //trigger photo animation when headline of each details section 
+                //reaches 80% of window height
+                details.forEach((detail, index)=> {
+
+                    let headline = detail.querySelector("h1")
+                    let animation = gsap.timeline()
+                    .to(photos[index], {yPercent:0})
+                    .set(allPhotos[index], {autoAlpha:0})
+                    ScrollTrigger.create({
+                        trigger:headline,
+                        start:"top 80%",
+                        end:"top 50%",
+                        animation:animation,
+                        scrub:true,
+                        markers:false
+                    })
+                })
+                    
+                    
+                
+                return () => { // optional
+                    // custom cleanup code here (runs when it STOPS matching)
+                    console.log("mobile")
+                };
+                });
+
+			}
+		</script>
+    </body>
+</html>

@@ -38,6 +38,9 @@ function initLoaderHome() {
   tl.set(".loading-words .active", { 
 		display: "none",
 	});
+  tl.set(".loading-words .active__home", { 
+		display: "flex",
+	});
 
   tl.set(".loading-words .home-active, .loading-words .home-active-last", { 
 		display: "block",
@@ -198,7 +201,7 @@ function initLoader() {
 		duration: .8,
 		top: "-100%",
 		ease: "Power4.easeInOut",
-    delay: .5
+    delay: 2
   });
 
   tl.to(".loading-screen .rounded-div-wrap.bottom", {
@@ -272,7 +275,7 @@ function pageTransitionIn() {
 	tl.to(".loading-screen", {
 		duration: .5,
 		top: "0%",
-		ease: "Power4.easeIn"
+		ease: "Power4.easeIn",
 	});
 
   if ($(window).width() > 540) { 
@@ -529,6 +532,7 @@ function initScript() {
   initVisualFilter();
   initScrolltriggerNav();
   initScrollLetters();
+  initTricksWordText();
   initTricksWords();
   initContactForm();
   initLazyLoad();
@@ -1043,6 +1047,23 @@ function initTricksWords() {
   }
 
 }
+function initTricksWordText() {
+    
+  // Copyright start
+  // Â© Code by T.RICKS, https://www.tricksdesign.com/
+  // You have the license to use this code in your projects but not redistribute it to others
+  // Tutorial: https://www.youtube.com/watch?v=xiAqTu4l3-g&ab_channel=TimothyRicks
+
+  // Find all text with .tricks class and break each letter into a span
+  var spanWord = document.getElementsByClassName("span-texts");
+  for (var i = 0; i < spanWord.length; i++) {
+
+  var wordWrap = spanWord.item(i);
+  wordWrap.innerHTML = wordWrap.innerHTML.replace(/(^|<\/?[^>]+>|\s+)([^\s<]+)/g, '$1<span class="span-text"><span class="span-text-inner">$2</span></span>');
+
+  }
+
+}
 
 /**
 * Contact Form
@@ -1181,6 +1202,31 @@ function initScrolltriggerAnimations() {
   $(".span-lines.animate").each(function (index) {
     let triggerElement = $(this);
     let targetElement = $(".span-lines.animate .span-line-inner");
+
+    let tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: triggerElement,
+        toggleActions:'play none none reset', 
+        start: "0% 100%",
+        end: "100% 0%"
+      }
+    });
+    
+    if(targetElement) {
+      tl.from(targetElement, {
+        y: "100%",
+        stagger: .01,
+        ease: "power3.out",
+        duration: 1,
+        delay: 0
+      });
+    }
+  });
+  }
+  if(document.querySelector(".span-texts.animate")) {
+  $(".span-texts.animate").each(function (index) {
+    let triggerElement = $(this);
+    let targetElement = $(".span-texts.animate .span-text-inner");
 
     let tl = gsap.timeline({
       scrollTrigger: {
@@ -1452,8 +1498,8 @@ var swiper = new Swiper(".swiper", {
     nextEl: ".swiper_button-next",
     prevEl: ".swiper_button-prev",
   },
-  speed: 700, // Set the duration in milliseconds
-
+  speed: 1000, // Set the duration in milliseconds
+  autoplay: true,
 });
 }
 
