@@ -21,6 +21,7 @@
       <link href="styles/locomotive-scroll.css" rel="stylesheet">      
       <link href="styles/styleguide.css" rel="stylesheet">      
       <link href="styles/components.css" rel="stylesheet">      
+      <link href="styles/responsive.css" rel="stylesheet">      
       <!-- <link href="styles/style.css" rel="stylesheet">       -->
       <link href="styles/style-new.css" rel="stylesheet">
 		<script>
@@ -63,7 +64,7 @@
                         </div>
                     </div> 
 
-                    <!-- <h2 class="active">Home<div class="dot"></div></h2> -->
+                    <h2 class="active">Home<div class="dot"></div></h2>
                     <!-- <h2 class="home-active home-active-first">Hello<div class="dot"></div></h2>
                     <h2 class="home-active">Bonjour<div class="dot"></div></h2>
                     <h2 class="home-active">स्वागत हे<div class="dot"></div></h2>
@@ -100,7 +101,10 @@
             </div>
         </div>
 
-        <main class="main" id="home" data-barba="container" data-barba-namespace="home"  >
+        <main class="main home" id="home" data-barba="container" data-barba-namespace="home"  >
+            <div class="mouse-pos-list-btn no-select"></div>
+            <div class="mouse-pos-list-span no-select"><p>Sound on</p></div>
+
             <div class="mouse-pos-list-image no-select">
                 <div class="mouse-pos-list-image-bounce overlay">
                     <div class="float-image-wrap">
@@ -216,7 +220,7 @@
             </div>
 
 
-            <div class="main-wrap" data-scroll-container>
+            <div class="main-wrap smooth-content" data-scroll-container>
                
 
                <section class="home-header theme-dark" data-scroll-section>
@@ -226,16 +230,13 @@
                 <div class="header__container">
                     <div class="social__media-container">
                         <a href="#" class="social_btn magnetic" data-strength="20" data-strength-text="10">
-                            <i class="fa-brands fa-x-twitter"></i>
+                            <i class="fa-brands fa-facebook-f"></i>
                         </a>
                         <a href="#" class="social_btn magnetic" data-strength="20" data-strength-text="10">
                             <i class="fa-brands fa-instagram"></i>
                         </a>
                         <a href="#" class="social_btn magnetic" data-strength="20" data-strength-text="10">
                             <i class="fa-brands fa-linkedin-in"></i>
-                        </a>
-                        <a href="#" class="social_btn magnetic" data-strength="20" data-strength-text="10">
-                            <i class="fa-brands fa-facebook-f"></i>
                         </a>
                     </div>
                             
@@ -291,7 +292,7 @@
                                                   <div class="header-above-h4" data-scroll data-scroll-speed="1">
                                                   </div>
                                                   <h4 class="hero__title">
-                                                    We Shape <br>Your <br>Values
+                                                    Unis pour <br>bâtir <br>l’avenir
                                                   </h4>
                                                   
                                                </div>
@@ -310,7 +311,7 @@
                                                   <div class="header-above-h4" data-scroll data-scroll-speed="1">
                                                   </div>
                                                   <h4 class="hero__title">
-                                                    We Shape <br>Your <br>Values
+                                                    Votre vision <br>Notre métal
                                                   </h4>
                                                   
                                                </div>
@@ -332,7 +333,6 @@
                                     </button>
                         </div>
                </section>
-
 
 
                 <section class="section home-intro" data-scroll-section>
@@ -474,7 +474,7 @@
                              <div class="horizontal-single-item">
                                 <div class="overlay lazy" style="background-position: center center; background-repeat: no-repeat; background-size: cover;">
                                     <div style="width: 100%; height: 100%;background-color: #f1f1f1;border-radius: 12px;border: 1px solid #dadada; display: grid;place-content: center;">
-                                        <img src="assets/Z.svg" style="width: 100%;height: 100%;max-width: 80%;"/>
+                                        <img src="assets/clients/Z.png" style="width: 100%;height: 100%;max-width: 80%; margin-inline: auto;"/>
                                     </div>
                                 </div>
                              </div>
@@ -483,7 +483,7 @@
                              <div class="horizontal-single-item">
                                 <div class="overlay lazy" style="background-position: center center; background-repeat: no-repeat; background-size: cover;">
                                     <div style="width: 100%; height: 100%;background-color: #f1f1f1;border-radius: 12px;border: 1px solid #dadada; display: grid;place-content: center;">
-                                        <img src="assets/Z.svg" style="width: 100%;height: 100%;max-width: 80%;"/>
+                                        <img src="assets/clients/Z.png" style="width: 100%;height: 100%;max-width: 80%; margin-inline: auto;"/>
                                     </div>
                                 </div>
                              </div>
@@ -492,7 +492,7 @@
                              <div class="horizontal-single-item">
                                 <div class="overlay lazy" style="background-position: center center; background-repeat: no-repeat; background-size: cover;">
                                     <div style="width: 100%; height: 100%;background-color: #f1f1f1;border-radius: 12px;border: 1px solid #dadada; display: grid;place-content: center;">
-                                        <img src="assets/carrefour.svg" style="width: 100%;height: 100%;max-width: 80%;"/>
+                                        <img src="assets/clients/carrefour.png" style="width: 100%;height: 100%;max-width: 80%; margin-inline: auto;"/>
                                     </div>
                                 </div>
                              </div>
@@ -501,7 +501,7 @@
                              <div class="horizontal-single-item">
                                 <div class="overlay lazy" style="background-position: center center; background-repeat: no-repeat; background-size: cover;">
                                     <div style="width: 100%; height: 100%;background-color: #f1f1f1;border-radius: 12px;border: 1px solid #dadada; display: grid;place-content: center;">
-                                        <img src="assets/CENTRALE.svg"  style="width: 100%;height: 100%;max-width: 80%;"/>
+                                        <img src="assets/clients/CENTRALE.png"  style="width: 100%;height: 100%;max-width: 80%; margin-inline: auto;"/>
                                     </div>
                                 </div>
                              </div>
@@ -510,7 +510,7 @@
                              <div class="horizontal-single-item">
                                 <div class="overlay lazy" style="background-position: center center; background-repeat: no-repeat; background-size: cover;">
                                     <div style="width: 100%; height: 100%;background-color: #f1f1f1;border-radius: 12px;border: 1px solid #dadada; display: grid;place-content: center;">
-                                        <img src="assets/Decathlon.svg" style="width: 100%;height: 100%;max-width: 80%;"/>
+                                        <img src="assets/clients/Decathlon.png" style="width: 100%;height: 100%;max-width: 80%; margin-inline: auto;"/>
                                     </div>
                                 </div>
                              </div>
@@ -519,7 +519,7 @@
                              <div class="horizontal-single-item">
                                 <div class="overlay lazy" style="background-position: center center; background-repeat: no-repeat; background-size: cover;">
                                     <div style="width: 100%; height: 100%;background-color: #f1f1f1;border-radius: 12px;border: 1px solid #dadada; display: grid;place-content: center;">
-                                        <img src="assets/EMB.svg" style="width: 100%;height: 100%;max-width: 80%;"/>
+                                        <img src="assets/clients/EMB.png" style="width: 100%;height: 100%;max-width: 80%; margin-inline: auto;"/>
                                     </div>
                                 </div>
                              </div>
@@ -530,7 +530,7 @@
                              <div class="horizontal-single-item">
                                 <div class="overlay lazy" style="background-position: center center; background-repeat: no-repeat; background-size: cover;">
                                     <div style="width: 100%; height: 100%;background-color: #f1f1f1;border-radius: 12px;border: 1px solid #dadada; display: grid;place-content: center;">
-                                        <img src="assets/marjan.svg" style="width: 100%;height: 100%;max-width: 80%;"/>
+                                        <img src="assets/clients/marjan.png" style="width: 100%;height: 100%;max-width: 80%; margin-inline: auto;"/>
                                     </div>
                                 </div>
                              </div>
@@ -539,7 +539,7 @@
                              <div class="horizontal-single-item">
                                 <div class="overlay lazy" style="background-position: center center; background-repeat: no-repeat; background-size: cover;">
                                     <div style="width: 100%; height: 100%;background-color: #f1f1f1;border-radius: 12px;border: 1px solid #dadada; display: grid;place-content: center;">
-                                        <img src="assets/marjan.svg" style="width: 100%;height: 100%;max-width: 80%;"/>
+                                        <img src="assets/clients/marjan.png" style="width: 100%;height: 100%;max-width: 80%; margin-inline: auto;"/>
                                     </div>
                                 </div>
                              </div>
@@ -548,7 +548,7 @@
                              <div class="horizontal-single-item">
                                 <div class="overlay lazy" style="background-position: center center; background-repeat: no-repeat; background-size: cover;">
                                     <div style="width: 100%; height: 100%;background-color: #f1f1f1;border-radius: 12px;border: 1px solid #dadada; display: grid;place-content: center;">
-                                        <img src="assets/ocp.svg" style="width: 100%;height: 100%;max-width: 80%;"/>
+                                        <img src="assets/clients/ocp.png" style="width: 100%;height: 100%;max-width: 90%; margin-inline: auto;"/>
                                     </div>
                                 </div>
                              </div>
@@ -557,7 +557,7 @@
                              <div class="horizontal-single-item">
                                 <div class="overlay lazy" style="background-position: center center; background-repeat: no-repeat; background-size: cover;">
                                     <div style="width: 100%; height: 100%;background-color: #f1f1f1;border-radius: 12px;border: 1px solid #dadada; display: grid;place-content: center;">
-                                        <img src="assets/sika.svg" style="width: 100%;height: 100%;max-width: 80%;"/>
+                                        <img src="assets/clients/sika.png" style="width: 100%;height: 100%;max-width: 80%; margin-inline: auto;"/>
                                     </div>
                                 </div>
                              </div>
@@ -566,7 +566,7 @@
                              <div class="horizontal-single-item">
                                 <div class="overlay lazy" style="background-position: center center; background-repeat: no-repeat; background-size: cover;">
                                     <div style="width: 100%; height: 100%;background-color: #f1f1f1;border-radius: 12px;border: 1px solid #dadada; display: grid;place-content: center;">
-                                        <img src="assets/TGCC.svg" style="width: 100%;height: 100%;max-width: 80%;"/>
+                                        <img src="assets/clients/TGCC.png" style="width: 100%;height: 100%;max-width: 80%; margin-inline: auto;"/>
                                     </div>
                                 </div>
                              </div>
@@ -575,7 +575,7 @@
                              <div class="horizontal-single-item">
                                 <div class="overlay lazy" style="background-position: center center; background-repeat: no-repeat; background-size: cover;">
                                     <div style="width: 100%; height: 100%;background-color: #f1f1f1;border-radius: 12px;border: 1px solid #dadada; display: grid;place-content: center;">
-                                        <img src="assets/mohammed vi.svg" style="width: 100%;height: 100%;max-width: 80%;"/>
+                                        <img src="assets/clients/mohammed vi.png" style="width: 100%;height: 100%;max-width: 80%; margin-inline: auto;"/>
                                     </div>
                                 </div>
                              </div>
@@ -590,7 +590,7 @@
                     </div>
                 </section> -->
 
-                <section class="section " data-scroll-section>
+                <section class="section mainn" data-scroll-section>
                    <div class="row work_container">
                     <div class="flex-col fade-in animate overlay lazy">
                         <div class="category__item">
@@ -749,6 +749,16 @@
                         </div>
                       </div>
                   </div>
+                </section>
+
+                <section class="page_transition" data-scroll-section>
+                    <div class="page1">
+                          <div class="content">
+                              <h1>Digitally crafted</h1>
+                              <h2>brand experiences</h2>
+                          </div>
+                        </div>
+                        <video id="video" autoplay muted loop src="assets/doukkalametal-video.webm"></video>
                 </section>
 
                 <section class="section testimonial" data-scroll-section>
@@ -985,7 +995,8 @@
         <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.6.1/dist/lazyload.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
         <script src="https://kit.fontawesome.com/dbfca54b0d.js" crossorigin="anonymous"></script>
-        <script src="js/locomotive-scroll.min.js"></script>        
+        <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js" defer></script>
+        <script src="js/locomotive-scroll.min.js"></script>           
         <script defer src="js/script.js"></script> 
         <script defer src="js/index-new.js"></script> 
         <script src="https://unpkg.com/split-type"></script>
@@ -1035,6 +1046,17 @@
                         }
                     }, interval);
                 }
+            });
+        </script>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                var video = document.getElementById('video');
+
+                // Toggle mute/unmute on click
+                video.addEventListener('click', function () {
+                    video.muted = !video.muted;
+                });
             });
         </script>
     </body>

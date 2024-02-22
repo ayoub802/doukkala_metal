@@ -154,6 +154,10 @@ audio, canvas, iframe, img, svg, video {
     vertical-align: middle;
 }
 
+
+body::-webkit-scrollbar {
+    display: none; /* Hide the scrollbar in WebKit browsers */
+}
 /* ------------------------- Typography -------------------------------------------------- */
 
 h1, h2, h3, h4, h5, h6, p, a, li, ul, ol, span, strong, em  {padding: 0; margin: 0; font-style: normal; font-weight: 450; letter-spacing: normal;}

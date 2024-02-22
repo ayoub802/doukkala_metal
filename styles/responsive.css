@@ -1,0 +1,203 @@
+@media screen and (max-width: 1600px) {
+    
+
+    /* -------------------- Horizontal - Home Page --------------------- */
+
+    .horizontal-items .horizontal-single-item img{
+        max-width: 65% !important;
+    }
+
+
+    /* -------------------- Testimonial - Home Page --------------------- */
+    .slider{
+        width: 1013px !important;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    
+
+    /* -------------------- HeroSection - Home Page --------------------- */
+
+    .hero__title{
+       font-size: 10vh !important;
+    }
+
+
+
+    /* -------------------- Work Value - Home Page --------------------- */
+
+    .work__values .row{
+        grid-template-columns: 1fr !important;
+        gap: 50px !important;
+    }
+
+    .page_transition video{
+        left: 85%;
+    }
+
+
+    /* -------------------- Page Transition - Home Page --------------------- */
+
+    .page_transition{
+        overflow: hidden;
+    }
+
+    /* -------------------- Testimonial - Home Page --------------------- */
+    .testimonial{
+        padding-block: 50px 100px !important;
+        overflow: hidden;
+    }
+
+    .testi__item{
+        height: 20vw !important;
+    }
+
+    .slider{
+        width: 900px !important;
+    }
+
+
+
+}
+
+@media screen and (max-width: 850px) {
+    
+
+    /* -------------------- Header - Home Page --------------------- */
+
+    .home-header{
+        align-items: baseline !important;
+        padding-block: 0px !important;
+        min-height: initial !important;
+    }
+    .header__container{
+       display: flex !important;
+       justify-content: space-between !important;
+    }
+
+    .social__media-container{
+        display: none !important;
+    }
+
+    .logo_doukkal{
+        margin-inline: initial !important;
+        margin-left: 75px;
+    }
+
+    .header__container .links-wrap .btn-link{
+        display: none !important;
+    }
+
+    .header__container .links-wrap li:last-child{
+        display: block !important;
+    }
+
+    .home .header__container .btn-link .btn-click::after{
+        background-color: #fff !important;
+    }
+
+    /* -------------------- Hero - Home Page --------------------- */
+
+    .hero__title{
+        font-size: 8vh !important;
+    }
+
+    /* -------------------- About - Home Page --------------------- */
+    .home-intro{
+        padding-top: 75px !important;
+    }
+
+    .about__title{
+        font-size: 2.5em !important;
+        margin-bottom: 1em;
+    }
+    .home-intro .flex-col:nth-child(2),.home-intro .flex-col:nth-child(1), .home-intro .row.secondary .flex-col:nth-child(1), .home-intro .row.secondary .flex-col:nth-child(2){
+      width: 100% !important;
+    }
+
+    .home-intro .flex-col:nth-child(1), .home-intro .flex-col:nth-child(2), .home-intro .row.secondary .flex-col:nth-child(1), .home-intro .row.secondary .flex-col:nth-child(2){
+        padding: 0 !important;
+    }
+
+    .home-intro .row.secondary{
+        margin-top: 100px !important;
+    }
+
+    .home-intro .row.secondary .flex-col:nth-child(2){
+        margin-top: 2em;
+    }
+
+    .num_exp
+    {
+        font-size: 2.5em;
+    }
+
+
+    /* -------------------- Gallery - Home Page --------------------- */
+    .work_container{
+        grid-template-columns: 1fr !important;
+    }
+
+
+    /* -------------------- Slider - Home Page --------------------- */
+    
+    .slider{
+        width: 650px !important;
+    }
+
+}
+
+
+@media screen and (max-width: 520px) {
+
+     
+    /* -------------------- Header - Home Page --------------------- */
+    .swiper_button-next,.swiper_button-prev{
+        display: none !important;
+    }
+
+    .logo_doukkal{
+        margin-left: 2rem !important;
+        width: 80px;
+    }
+
+
+    /* -------------------- About - Home Page --------------------- */
+    .home-intro .row.secondary .flex-col:nth-child(2){
+        align-items: flex-start;
+    }
+
+
+    /* -------------------- Work Values - Home Page --------------------- */
+    .starte_num-img{
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
+    }
+    
+    .work__values .work__values-items{
+        align-items: center !important;
+        flex-direction: column;
+        row-gap: 3rem;
+    }
+
+
+
+    /* -------------------- Work Values - Home Page --------------------- */
+    .page_transition{
+        display: none !important;
+    }
+
+    /* -------------------- Testimonial - Home Page --------------------- */
+
+    .testimonial{
+        padding-block: 0px !important;
+        padding-top: var(--section-padding) !important;
+       padding-bottom: var(--section-padding) !important;
+    }
+
+    .slider .testi__item{
+        height: 50vw !important; 
+    }
+}

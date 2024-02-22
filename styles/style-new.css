@@ -7,6 +7,7 @@ main {
     position: fixed;
     height: 100%;
     background: var(--color-white);
+    transition: all .1s ease-in-out;
  }
   
  .main-wrap::after {
@@ -114,13 +115,51 @@ main {
  .loading-container .loading-words {
     position: absolute;
     top: 50%;
-    left: 20%;
-    transform: translate(-20%, -50%);
+    left: 50%;
+    transform: translate(-50%, -50%) !important;
     /* opacity: 0; */
     pointer-events: none;
     display: block;
     /* will-change: opacity; */
  }
+ .loading-container .loading-words.active {
+    top: 50%;
+    left: 20%;
+    transform: translate(-20%, -50%) !important;
+ }
+
+ .page1{
+   width: 100%;
+   position: relative;
+   z-index: 9;
+   padding-top: 12vw;
+}
+ .page1 h1{
+   font-size: 8vw;
+   margin-bottom: 0 !important;
+   font-weight: 500;
+   text-align: center;
+   transform-origin: left;
+   text-transform: uppercase;
+}
+.page1 h2{
+   font-size: 8vw;
+   margin-bottom: 0 !important;
+   font-weight: 500;
+   text-align: center;
+   transform-origin: left;
+   text-transform: uppercase;
+}
+
+.page_transition video{
+   width: 90%;
+   position: relative;
+   z-index: 100;
+   transform: top center;
+   top: 10%;
+   left: 50%;
+   transform: translate(-50%, 10%);
+}
  
  .loading-container .loading-words h2 {
     margin: 0;
@@ -331,8 +370,8 @@ main {
  }
 
  .header__container{
-   display: flex;
-   justify-content: space-between;
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
    align-items: center;
    width: 100%;
    position: absolute;
@@ -349,6 +388,7 @@ main {
 /* Home Section */
 .logo_doukkal{
    width: 100px;
+   margin-inline: auto;
  }
  
  /* ------------------------- Fixed Nav -------------------------------------------------- */
@@ -897,7 +937,7 @@ main {
  .social__media-container{
    display: flex;
    align-items: center;
-   gap: 25px;
+   gap: 50px;
 
    padding-left: 35px;
  }
@@ -929,6 +969,10 @@ main {
 .home_content h3{
    text-align: center;
    font-weight: 700 !important;
+ }
+
+ .links-wrap{
+   justify-content: end;
  }
 
  .swiper_button-prev{
@@ -2020,6 +2064,10 @@ main {
     top: 0%;
     will-change: transform, width, height;
  }
+
+ #home .mouse-pos-list-btn{
+   background-color: var(--orange) !important;
+ }
  
  .mouse-pos-list-span {
     background: transparent;
@@ -2282,7 +2330,6 @@ main {
 }
 
  /* ------------------------- TestiMonial  -------------------------------------------------- */
-
  .testimonial__title{
    color: #EB5D3F;
    text-align: center;
@@ -2698,8 +2745,7 @@ main {
  
     .horizontal-items .row.row-1,
     .horizontal-items .row.row-2 {
-       transform: translate(0,0) !important;
-    }
+       transform: translate(0,0)  !important;    }
  
     .horizontal-items .row-1 .flex-col:nth-child(3), 
     .horizontal-items .row-1 .flex-col:nth-child(4) {
