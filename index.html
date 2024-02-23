@@ -38,10 +38,15 @@
  
     <body data-barba="wrapper">
         <div class="no-scroll-overlay"></div>
-        <div class="loading-container">
+
+        
+        <div class="loading-container" >
             <div class="loading-screen">
                 <div class="rounded-div-wrap top">
                     <div class="rounded-div"></div>
+                </div>
+                <div class="preloader">
+                    <h1 id="text">Doukkala Metal</h1>
                 </div>
                 <div class="loading-words">
                      
@@ -64,7 +69,7 @@
                         </div>
                     </div> 
 
-                    <h2 class="active">Home<div class="dot"></div></h2>
+                    <h2 class="active__displaying">Home<div class="dot"></div></h2>
                     <!-- <h2 class="home-active home-active-first">Hello<div class="dot"></div></h2>
                     <h2 class="home-active">Bonjour<div class="dot"></div></h2>
                     <h2 class="home-active">स्वागत हे<div class="dot"></div></h2>
@@ -185,13 +190,6 @@
                         <div class="socials">
                             <h5>Socials</h5>
                             <ul>
-                                <li class="btn btn-link btn-link-external">
-                                    <a href="#" target="_blank" class="btn-click magnetic" data-strength="20" data-strength-text="10">
-                                        <span class="btn-text">
-                                            <span class="btn-text-inner">Twitter X</span>
-                                        </span>
-                                    </a>
-                                </li>
                                 <li class="btn btn-link btn-link-external">
                                     <a href="#" target="_blank" class="btn-click magnetic" data-strength="20" data-strength-text="10">
                                         <span class="btn-text">
@@ -374,7 +372,7 @@
                             <ul class="about__content-exp">
                                 <li>
                                    <div animate class="num_exp">
-                                        <h3>40</h3>
+                                        <h3 data-number="40">40</h3>
                                         <h2>+</h2>
                                    </div>
                                    <h2>Ans d'experience</h2>
@@ -382,7 +380,7 @@
                                 </li>
                                 <li>
                                    <div class="num_exp">
-                                        <h3>200</h3>
+                                        <h3 data-number="200">200</h3>
                                         <h2>+</h2>
                                    </div>
                                    <h2>Projects Réalisés</h2>
@@ -414,51 +412,56 @@
                                 <h4><span>Charpente métallique</span></h4>
                             </div>
                             <div class="flex-col animate">
-                                <p>Flooring & Roofing</p>
+                                <p>commercial, logistique, industrie</p>
                             </div>
                             </a>
                         </li>
-                                    <li class="design development interaction visible">
+
+                        <li class="design development interaction visible">
                             <div class="stripe animate"></div>
                             <a href="#work/aanstekelijk" class="row">
                             <div class="flex-col">
                                 <h4><span>Chaudronnerie & Tuyauterie</span></h4>
                             </div>
                             <div class="flex-col animate">
-                                <p>Building Construction</p>
+                                <p>production énergie , industrie agroalimentaire</p>
                             </div>
                             </a>
                         </li>
-                                    <li class="development interaction design visible">
+
+                        
+                        <li class="development interaction design visible">
                             <div class="stripe animate"></div>
                             <a href="#work/base-create" class="row">
                             <div class="flex-col">
                                 <h4><span>Couverture</span></h4>
                             </div>
                             <div class="flex-col animate">
-                                <p>Architecture Design</p>
+                                <p>bac acier , panneaux sandwich , photovoltaïque</p>
                             </div>
                             </a>
                         </li>
-                                    <li class="design development interaction visible">
+                        
+                        <li class="design development interaction visible">
                             <div class="stripe animate"></div>
                             <a href="#work/avvr" class="row">
                             <div class="flex-col">
                                 <h4><span>Bardage</span></h4>
                             </div>
                             <div class="flex-col animate">
-                                <p>Building Renovation</p>
+                                <p>simple peau , double peau</p>
                             </div>
                             </a>
                         </li>
-                                    <li class="design development interaction visible">
+
+                        <li class="design development interaction visible">
                             <div class="stripe animate"></div>
                             <a href="#work/avvr" class="row">
                             <div class="flex-col">
                                 <h4><span>Service après vente</span></h4>
                             </div>
                             <div class="flex-col animate">
-                                <p>Building Renovation</p>
+                                <p>à votre disposition 7j/7</p>
                             </div>
                             </a>
                         </li>
@@ -467,6 +470,106 @@
                 </div>
                 </section>
 
+                <section class="section work-tiles work-tiles-home" data-scroll-section>
+                    <div class="container">
+                       <ul>
+                         <li class="design development interaction visible">
+                             <div class="single-tile-wrap">
+                                <a href="#" class="row">
+                                   <div class="flex-col">
+                                      <div class="tile-image">
+                                         <div class="overlay overlay-image lazy" style="background-color: #48494A; background-position: center center; background-repeat: no-repeat; background-size: cover;" data-bg="./assets/Charpente-service.jpeg"></div>                     
+                                        </div>
+                                   </div>
+                                   <div class="flex-col">
+                                        <h4><span>Charpente métallique</span></h4>
+                                      <div class="stripe"></div>
+                                   </div>
+                                   <div class="flex-col">
+                                    <p>commercial, logistique, industrie</p>
+                                   </div>
+                                </a>
+                             </div>
+                          </li>
+
+                          
+                        <li class="design development interaction visible">
+                             <div class="single-tile-wrap">
+                                <a href="#" class="row">
+                                   <div class="flex-col">
+                                      <div class="tile-image">
+                                         <div class="overlay overlay-image lazy" style="background-color: #101010; background-position: center center; background-repeat: no-repeat; background-size: cover;" data-bg="./assets/chaudronnerie-service.jpeg"></div>                    
+                                         </div>
+                                   </div>
+                                   <div class="flex-col">
+                                      <h4><span>Chaudronnerie & Tuyauterie</span></h4>
+                                      <div class="stripe"></div>
+                                   </div>
+                                   <div class="flex-col">
+                                      <p>production énergie , industrie agroalimentaire</p>
+                                   </div>
+                                </a>
+                             </div>
+                          </li>
+
+
+                        <li class="development interaction design visible">
+                             <div class="single-tile-wrap">
+                                <a href="#" class="row">
+                                   <div class="flex-col">
+                                      <div class="tile-image">
+                                         <div class="overlay overlay-image lazy" style="background-color: #363637; background-position: center center; background-repeat: no-repeat; background-size: cover;" data-bg="./assets/Couverure-service.jpeg"></div>                     </div>
+                                   </div>
+                                   <div class="flex-col">
+                                      <h4><span>Couverture</span></h4>
+                                      <div class="stripe"></div>
+                                   </div>
+                                   <div class="flex-col">
+                                      <p>bac acier , panneaux sandwich , photovoltaïque</p>
+                                   </div>
+                                </a>
+                             </div>
+                          </li>
+
+
+                        <li class="design development interaction visible">
+                             <div class="single-tile-wrap">
+                                <a href="#" class="row">
+                                   <div class="flex-col">
+                                      <div class="tile-image">
+                                         <div class="overlay overlay-image lazy" style="background-color: #D8D3CD; background-position: center center; background-repeat: no-repeat; background-size: cover;" data-bg="./assets/Bardage-service.jpeg"></div>                     </div>
+                                   </div>
+                                   <div class="flex-col">
+                                      <h4><span>Bardage</span></h4>
+                                      <div class="stripe"></div>
+                                   </div>
+                                   <div class="flex-col">
+                                      <p>simple peau , double peaut</p>
+                                   </div>
+                                </a>
+                             </div>
+                          </li>
+
+                        <li class="design development interaction visible">
+                             <div class="single-tile-wrap">
+                                <a href="#" class="row">
+                                   <div class="flex-col">
+                                      <div class="tile-image">
+                                         <div class="overlay overlay-image lazy" style="background-color: #D8D3CD; background-position: center center; background-repeat: no-repeat; background-size: cover;" data-bg="./assets/apres vente-service.jpg"></div>                     </div>
+                                   </div>
+                                   <div class="flex-col">
+                                      <h4><span>Service après vente</span></h4>
+                                      <div class="stripe"></div>
+                                   </div>
+                                   <div class="flex-col">
+                                      <p>à votre disposition 7j/7</p>
+                                   </div>
+                                </a>
+                             </div>
+                          </li>
+                        </ul>
+                    </div>
+                 </section>
                 <section class="horizontal-items" data-scroll-section>
                     <div class="container">    
                        <div class="row row-1" data-scroll data-scroll-speed="-1" data-scroll-direction="horizontal">
@@ -474,7 +577,7 @@
                              <div class="horizontal-single-item">
                                 <div class="overlay lazy" style="background-position: center center; background-repeat: no-repeat; background-size: cover;">
                                     <div style="width: 100%; height: 100%;background-color: #f1f1f1;border-radius: 12px;border: 1px solid #dadada; display: grid;place-content: center;">
-                                        <img src="assets/clients/Z.png" style="width: 100%;height: 100%;max-width: 80%; margin-inline: auto;"/>
+                                        <img src="assets/clients/EMB.png" style="width: 100%;height: 100%;max-width: 80%; margin-inline: auto;"/>
                                     </div>
                                 </div>
                              </div>
@@ -510,7 +613,7 @@
                              <div class="horizontal-single-item">
                                 <div class="overlay lazy" style="background-position: center center; background-repeat: no-repeat; background-size: cover;">
                                     <div style="width: 100%; height: 100%;background-color: #f1f1f1;border-radius: 12px;border: 1px solid #dadada; display: grid;place-content: center;">
-                                        <img src="assets/clients/Decathlon.png" style="width: 100%;height: 100%;max-width: 80%; margin-inline: auto;"/>
+                                        <img src="assets/clients/ALF SAHEL.png" style="width: 100%;height: 100%;max-width: 80%; margin-inline: auto;"/>
                                     </div>
                                 </div>
                              </div>
@@ -594,44 +697,44 @@
                    <div class="row work_container">
                     <div class="flex-col fade-in animate overlay lazy">
                         <div class="category__item">
-                            <h3>Contruction</h3>
+                            <h3>Charpente métallique</h3>
                         </div>
                         <img src="assets/gallery (1).jpeg"/>
                         <div class="work__title-wrap">
-                            <h2 class="work__title">urabn oasis</h2>
+                            <h2 class="work__title">Université Mohammed VI polytechnique</h2>
                         </div>
 
                         <div class="work__overlay"></div>
                     </div>
                     <div class="flex-col fade-in animate overlay lazy">
                         <div class="category__item">
-                            <h3>Contruction</h3>
+                            <h3>Construction métallique</h3>
                         </div>
                         <img src="assets/gallery (2).jpeg"/>
                         <div class="work__title-wrap">
-                            <h2 class="work__title">urabn oasis</h2>
+                            <h2 class="work__title">MYHER industrie Laayoun</h2>
                         </div>
 
                         <div class="work__overlay"></div>
                     </div>
                     <div class="flex-col fade-in animate overlay lazy">
                         <div class="category__item">
-                            <h3>Contruction</h3>
+                            <h3>Charpente métallique</h3>
                         </div>
                         <img src="assets/gallery (4).jpeg"/>
                         <div class="work__title-wrap">
-                            <h2 class="work__title">urabn oasis</h2>
+                            <h2 class="work__title">Carrefour market Tetouan</h2>
                         </div>
 
                         <div class="work__overlay"></div>
                     </div>
                     <div class="flex-col fade-in animate overlay lazy">
                         <div class="category__item">
-                            <h3>Contruction</h3>
+                            <h3>Structure métallique</h3>
                         </div>
                         <img src="assets/Charpente-service.jpeg"/>
                         <div class="work__title-wrap">
-                            <h2 class="work__title">urabn oasis</h2>
+                            <h2 class="work__title">Complexe agroalimentaire IDNA FOOD</h2>
                         </div>
                         <div class="work__overlay"></div>
                     </div>
@@ -654,19 +757,6 @@
                                     </div>
                                 </div>
                                 <h2 class="state__values-title">Projects Réalisés</h2>
-                            </div>
-                            <div class="work__values-items">
-                                <div class="starte_num-img">
-                                    <img src="assets/state_2.svg" alt="" class="state_values-img">
-                                    <div class="state__values-number">
-                                        <h3 class="state__values-number-custom" data-number="1.8">
-                                            <span>$</span>
-                                            1.8B
-                                        </h3>
-                                        
-                                    </div>
-                                </div>
-                                <h2 class="state__values-title">Combined Value</h2>
                             </div>
                             <div class="work__values-items">
                                 <div class="starte_num-img">
@@ -719,19 +809,6 @@
                                     </div>
                                 </div>
                                 <h2 class="state__values-title">Clientéle fidéle</h2>
-                            </div>
-                            <div class="work__values-items">
-                                <div class="starte_num-img">
-                                    <img src="assets/state_7.svg" alt="" class="state_values-img">
-                                    <div class="state__values-number">
-                                        <h3 class="state__values-number-custom">
-                                            110
-                                            <span>+</span>
-                                        </h3>
-                                        
-                                    </div>
-                                </div>
-                                <h2 class="state__values-title">Infinity Staff</h2>
                             </div>
                             <div class="work__values-items">
                                 <div class="starte_num-img">
@@ -926,7 +1003,7 @@
                                         </a>
                                     </div>
                                     <div class="btn btn-normal">
-                                        <a href="tel:+31627847430" class="btn-click magnetic" data-strength="25" data-strength-text="15">
+                                        <a href="tel:+212 601 02030500" class="btn-click magnetic" data-strength="25" data-strength-text="15">
                                         <div class="btn-fill"></div>
                                         <span class="btn-text">
                                             <span class="btn-text-inner change">+212 601 02030500</span>
@@ -941,20 +1018,13 @@
                                 <div class="flex-col">
                                     <div class="credits">
                                         <h5>Edited By</h5>
-                                        <a href="" style="text-transform: uppercase; color: #fff;">WHD Agency</a>
+                                        <a href="https://whd.ma/" style="text-transform: uppercase; color: #fff;">WHD Agency</a>
                                     </div>
                                 </div>
                                 <div class="flex-col">
                                     <div class="socials">
                                         <h5>Socials</h5>
                                         <ul>
-                                            <li class="btn btn-link btn-link-external">
-                                                <a href="#" target="_blank" class="btn-click magnetic" data-strength="20" data-strength-text="10">
-                                                    <span class="btn-text">
-                                                        <span class="btn-text-inner">Twitter X</span>
-                                                    </span>
-                                                </a>
-                                            </li>
                                             <li class="btn btn-link btn-link-external">
                                                 <a href="#" target="_blank" class="btn-click magnetic" data-strength="20" data-strength-text="10">
                                                     <span class="btn-text">
@@ -1057,6 +1127,11 @@
                 video.addEventListener('click', function () {
                     video.muted = !video.muted;
                 });
+                function clamp(value, min, max) {
+                        return Math.min(Math.max(value, min), max);
+                    }
+
+                console.log("The Style => ", clamp(16, 192, 32));
             });
         </script>
     </body>

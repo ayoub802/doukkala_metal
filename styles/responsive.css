@@ -12,10 +12,30 @@
     .slider{
         width: 1013px !important;
     }
+
+
+    /* -------------------- About Section - About Page --------------------- */
+    .about__content-text{
+        font-size: 1.4em !important;
+    }
+
+
+    .single-tile-wrap p{
+        position: initial !important;
+    }
 }
 
 @media screen and (max-width: 1024px) {
     
+    /* -------------------- Preloader - Home Page ---------------------  */
+
+    #text{
+        font-size: 4.5rem !important;
+    }
+
+    .box, .box_red{
+        font-size: 3.21rem !important;
+    }
 
     /* -------------------- HeroSection - Home Page --------------------- */
 
@@ -32,9 +52,6 @@
         gap: 50px !important;
     }
 
-    .page_transition video{
-        left: 85%;
-    }
 
 
     /* -------------------- Page Transition - Home Page --------------------- */
@@ -57,7 +74,14 @@
         width: 900px !important;
     }
 
+    /* -------------------- About Section - About Page --------------------- */
+    .home-intro{
+        padding-top: 100px;
+    }
 
+    .about__content-text{
+        font-size: 1.1em !important;
+    }
 
 }
 
@@ -76,7 +100,7 @@
        justify-content: space-between !important;
     }
 
-    .social__media-container{
+    .social__media-container {
         display: none !important;
     }
 
@@ -96,6 +120,16 @@
     .home .header__container .btn-link .btn-click::after{
         background-color: #fff !important;
     }
+
+    .swiper_button-next,.swiper_button-prev{
+        display: none !important;
+    }
+
+    .logo_doukkal{
+        margin-left: 2rem !important;
+        width: 100px;
+    }
+
 
     /* -------------------- Hero - Home Page --------------------- */
 
@@ -139,6 +173,14 @@
         grid-template-columns: 1fr !important;
     }
 
+    .work__title{
+        font-size: 18px !important;
+    }
+
+    .work_container .flex-col img{
+        height: 25rem !important;
+        object-fit: cover !important;
+    }
 
     /* -------------------- Slider - Home Page --------------------- */
     
@@ -146,20 +188,65 @@
         width: 650px !important;
     }
 
-}
 
+    /* -------------------- About Section - About Page --------------------- */
+
+    .about-round-wrap .row.secondary{
+        grid-template-columns: 1fr !important;
+    }
+
+    .about-round-wrap .row.secondary .flex-col{
+        order: unset !important;
+    }
+
+    .about-round-wrap .row.secondary:nth-of-type(odd) .flex-col.reveal{
+        order: -1 !important;
+    }
+    .about__content-text{
+        margin-top: .5em !important;
+        font-size: 2em !important;
+    }
+
+
+    /* -------------------- Contact Section - Contact Page --------------------- */
+
+    .contact-header{
+        padding-top: 150px !important;
+    }
+
+    .contact-header .row:nth-child(2){
+        padding-top: 3rem !important;
+    }
+
+    .contact-header .row:nth-child(2) .links-wrap{
+        padding-bottom: 2.5em !important;
+    }
+
+}
 
 @media screen and (max-width: 520px) {
 
+    /* -------------------- Preloader - Home Page --------------------- */
      
-    /* -------------------- Header - Home Page --------------------- */
-    .swiper_button-next,.swiper_button-prev{
-        display: none !important;
+    #text{
+        font-size: 1rem !important;
+        line-height: 2.5rem !important;
+        display: inline-flex;
+        gap: 25px;
     }
 
+    .boxes, .box, .box_red{
+        height: 5.5vmin !important;
+    }
+
+    .box, .box_red{
+        font-size: 1.2rem !important;
+    }
+
+    /* -------------------- Header - Home Page --------------------- */
     .logo_doukkal{
         margin-left: 2rem !important;
-        width: 80px;
+        width: 70px !important;
     }
 
 
@@ -199,5 +286,52 @@
 
     .slider .testi__item{
         height: 50vw !important; 
+    }
+
+
+    /* -------------------- Header Section - About Page --------------------- */
+
+    .home-header .container{
+        padding-bottom: 0 !important;
+    }
+
+
+    /* -------------------- About Section - About Page --------------------- */
+    .about__title{
+        font-size: 1.5em !important;
+    }
+
+    .about__splining{
+        font-size: 16px !important;
+        font-weight: 800 !important;
+    }
+
+    .about__content-text{
+        font-size: 1.5em !important;
+    }
+
+    /* -------------------- Horizontal Section - About Page --------------------- */
+
+    .horizontal-items{
+        padding-top: calc(var(--section-padding) * 1) !important;
+    }
+
+    .horizontal-items .row{
+        width: 100% !important;
+        left: 0 !important;
+        justify-content: center;
+    }
+
+    .horizontal-items .flex-col{
+        padding: 1.25vw !important;
+        width: 45%;
+    }
+
+    .horizontal-items .row-1 .flex-col:nth-child(3), .horizontal-items .row-1 .flex-col:nth-child(4){
+        transform: translate(0, 0) !important;
+    }
+
+    .horizontal-items .row-2 .flex-col:nth-child(3), .horizontal-items .row-2 .flex-col:nth-child(4){
+        display: block !important;
     }
 }

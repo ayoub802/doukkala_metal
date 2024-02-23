@@ -11,14 +11,63 @@ initPageTransitions();
 
 // Animation - First Page Load
 function initLoaderHome() { 
-  const text = new SplitType("#preload_text")
+  const text = new SplitType("#text")
   const boxes = document.querySelector(".boxes_wrapper")
   const preloader = document.querySelector(".prelod_text")
   var tl = gsap.timeline();
 
   $(document).ready(function(){
     $(".loading-words").addClass('active');
+    $(".active__displaying").removeClass('active');
   });
+
+  tl.set(".loading-words", { 
+		display: "none",
+    opacity: 0
+	});	
+
+
+  tl.from(".char", {
+    y: 105,
+    stagger: .06,
+    duration: .3,
+    rotate: 5,
+  //   ease: "back.out(1.7)",
+    ease: "power1.out",
+      onUpdate: (progress) => {
+      // Update opacity during the animation
+      gsap.set("#text", { opacity: progress });
+    },
+    onComplete: () => {
+      //     // Zoom in animation
+          gsap.to("#text", {
+            scale: 1.2,
+            duration: 0.5,
+            stagger: 0.1,
+            ease: "power1.out",
+            onComplete: () => {
+              // Zoom out animation
+              
+              gsap.to("#text", {
+                opacity: 0,
+                duration: 0.5,
+                ease: "power1.out",
+                onComplete: () => {
+                  // Animation complete, add a class to .boxes
+                  gsap.set(".loading-words .active__home", { 
+                    display: "flex",
+                  });
+                },
+              });
+            },
+          });
+        },
+  })
+
+  tl.set(".loading-words", { 
+    display: "block",
+    opacity: 1
+  });	
 
 	tl.set(".loading-screen", { 
 		top: "0",
@@ -42,9 +91,8 @@ function initLoaderHome() {
   tl.set(".loading-words .active", { 
 		display: "none",
 	});
-  tl.set(".loading-words .active__home", { 
-		display: "flex",
-	});
+  
+ 
 
   tl.set(".loading-words .home-active, .loading-words .home-active-last", { 
 		display: "block",
@@ -74,16 +122,16 @@ function initLoaderHome() {
   });
 
   tl.to(".loading-words", {
-		duration: .8,
+		duration: 2,
 		opacity: 1,
     // y: -50,
     ease: "Power4.easeOut",
     delay: .5
 	});
 
-  tl.to(".loading-words .home-active", {
+  tl.to(".loading-words .active__displaying.active", {
 		duration: .01,
-		opacity: 1,
+		opacity: 0,
     stagger: .15,
     ease: "none",
     onStart: homeActive
@@ -99,7 +147,7 @@ function initLoaderHome() {
   // })
 
   function homeActive() {
-    gsap.to(".loading-words .home-active", {
+    gsap.to(".loading-words .active__displaying.active", {
       duration: .01,
       opacity: 0,
       stagger: .15,
@@ -240,7 +288,9 @@ function initLoader() {
 		cursor: "auto",
 	},"=-.8");
 
-  
+  $(document).ready(function(){
+    $(".active__displaying").addClass('active');
+  });
 
 }
 
@@ -250,6 +300,7 @@ function pageTransitionIn() {
 	var tl = gsap.timeline();
   $(document).ready(function(){
     $(".loading-words").removeClass('active');
+    $(".active__displaying").removeClass('active');
   });
   tl.call(function() {
     scroll.stop();
@@ -356,7 +407,9 @@ function pageTransitionIn() {
 // Animation - Page transition Out
 function pageTransitionOut() {
 	var tl = gsap.timeline();
-
+  $(document).ready(function(){
+    $(".active__displaying").addClass('active');
+  });
   if ($(window).width() > 540) { 
     tl.set("main .once-in", {
       y: "50vh",
@@ -1204,6 +1257,10 @@ function initScrolltriggerAnimations() {
   });
   }
 
+  if(document.querySelector(".home-intro")){
+    
+  }
+
   // Scrolltrigger Animation : Span Lines Intro Home
   if(document.querySelector(".span-lines.animate")) {
   $(".span-lines.animate").each(function (index) {
@@ -1458,6 +1515,33 @@ function initScrolltriggerAnimations() {
         }, 0);
       });
       }
+
+      if(document.querySelector(".about-round-wrap")) {
+      // Scrolltrigger Animation : Footer General Footer
+      $(".about-round-wrap").each(function (index) {
+        let triggerElement = $(this);
+        let targetElementRound = $(".about-rounded-div .rounded-div-wrap");
+        let targetElementArrow = $("footer .arrow");
+      
+        let tl = gsap.timeline({
+          scrollTrigger: {
+            trigger: triggerElement,
+            start: "0% 100%",
+            end: "100% 100%",
+            scrub: 0
+          }
+        });
+        tl.to(targetElementRound, {
+          height: 0,
+          ease: "none"
+        }, 0)
+        .from(targetElementArrow, {
+          rotate: 15,
+          ease: "none"
+        }, 0);
+      });
+      }
+
 
       if(document.querySelector(".footer-case-wrap")) {
         // Scrolltrigger Animation : Footer Case

@@ -49,6 +49,38 @@ main {
  
  /* ------------------------- Page Transition -------------------------------------------------- */
  
+ .preloader{
+   background-color: #000;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ } 
+ 
+ .preloader.removeheight{
+   height: 0vh;
+ }
+ #text {
+   font-size: 7rem;
+   clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+   line-height: 6.5rem;
+   letter-spacing: 10px;
+   font-weight: 700;
+   color: #fff;
+   text-transform: uppercase;
+ }
+
+ #text .line {
+   display: block;
+   width: 100%;
+   height: 1px;
+   background-color: var(--color-border);
+   margin-top: 0px;
+   margin-bottom: 100px !important;
+}
+
+
+ 
  .no-scroll-overlay {
     position: fixed;
     top: 0;
@@ -70,6 +102,10 @@ main {
     z-index: 800;
     pointer-events: none;
     background: transparent;
+ }
+
+ .loading-container.active{
+   display: block;
  }
  
  .loading-screen {
@@ -126,6 +162,9 @@ main {
     top: 50%;
     left: 20%;
     transform: translate(-20%, -50%) !important;
+ }
+ .loading-container .loading-words .active__displing {
+    display: none;
  }
 
  .page1{
@@ -290,6 +329,11 @@ main {
  
  .loading-container .loading-words h2.active {
     display: block;
+    opacity: 1;
+ }
+ .loading-container .loading-words .active__displaying.active {
+    display: block !important;
+    opacity: 1 !important;
  }
  
  .loading-container .loading-words .home-active,
@@ -631,7 +675,7 @@ main {
     opacity: .75;
  }
  
- .footer-rounded-div {
+ .footer-rounded-div, .about-rounded-div {
     width: 100%;
     position: relative;
     height: 0;
@@ -639,7 +683,7 @@ main {
     z-index: 2;
  }
  
- .footer-rounded-div .rounded-div-wrap {
+ .footer-rounded-div .rounded-div-wrap,  .about-rounded-div .rounded-div-wrap {
     transform: translateY(-1px);
     will-change: height;
  }
@@ -767,7 +811,7 @@ main {
  
  @media screen and (max-width: 720px){
  
-    .footer-rounded-div .rounded-div-wrap{
+    .footer-rounded-div .rounded-div-wrap, .about-rounded-div .rounded-div-wrap{
        height: 7.5vh;
     }
  
@@ -1788,7 +1832,7 @@ main {
  
  .work-tiles ul li .single-tile-wrap {
     width: 100%;
-    padding-bottom: calc(var(--section-padding) * 1);
+    padding-bottom:4.5rem;
     padding-left: calc(var(--container-padding) * .25);
     padding-right: calc(var(--container-padding) * .25);
  }
@@ -1913,14 +1957,7 @@ main {
     .work-tiles-home + .center-grid-btn {
        padding-top: 0;
     }
- 
-    .work-tiles-home .container ul li:nth-child(3){
-       display: none;
-    }
- 
-    .work-tiles-home .container ul li:nth-child(4){
-       display: none;
-    }
+
  }
  
  /* ------------------------- Work Grid - Fade -------------------------------------------------- */
@@ -2538,7 +2575,7 @@ main {
     }
  
     .contact-header .form-col {
-       padding: 0 0 0 1.5em;
+       padding: 1.8rem 0 0 1.5em;
        font-size: 1.15em;
     }
  
@@ -2719,9 +2756,9 @@ main {
        width: 33.333%;
     }
  
-    .horizontal-items .flex-col:nth-child(4) {
+    /* .horizontal-items .flex-col:nth-child(4) {
        display: none;
-    }
+    } */
  
  }
  
@@ -2757,11 +2794,11 @@ main {
        display: none;
     }
     
-    .horizontal-items .container {
+    /* .horizontal-items .container {
        display: none;
        opacity: 0;
        visibility: hidden;
-    }
+    } */
  
     .horizontal-items {
        padding-top: 0;
@@ -3522,14 +3559,43 @@ main {
  
 
  /* ------------------ ABOUT - ABOUT PAGE ----------------------- */
+ #about p{
+   position: initial;
+   width: unset;
+ }
+ .testimonial p{
+   position: initial;
+   width: unset;
+ }
+
+
  .about__section{
    background-color: var(--color-white);
  }
 
+ .about__section .about__badge{
+   max-width: max-content;
+   margin-inline: auto;
+   border: 1px solid var(--color-dark);
+   border-radius: 100rem;
+   padding: 0.5em 1.2em;
+   margin-bottom: 2.1em;
+}
  .about__section .hero__title{
    color: var(--color-dark) !important;
  }
 
+ .about__section .hero__text{
+   font-weight: 500;
+    font-style: normal;
+    font-size: 0.9em;
+    line-height: 1.5;
+    color: var(--color-dark);
+    max-width: 70ch;
+    margin-inline: auto;
+    text-align: center;
+    margin-top: 2em;
+ }
 
 
 
@@ -3540,6 +3606,9 @@ main {
 
  .theme-dark .btn-link .btn-click::after{
    background-color: var(--color-dark);
+ }
+ #contact .theme-dark .btn-link .btn-click::after{
+   background-color: var(--color-white);
  }
 
  .about__text{
@@ -3584,4 +3653,49 @@ main {
    text-transform: uppercase;
    letter-spacing: .05em;
    opacity: .5;
+}
+
+
+ /* ---------------- About Wrap - ABOUT PAGE --------------- */
+.about-round-wrap {
+   display: block;
+   width: 100%;
+   position: relative;
+   overflow: hidden;
+   background: var(--color-dark);
+   display: flex;
+   align-items: flex-end;
+   box-shadow: 0px 5px 0px 5px var(--color-dark);
+   padding-top: 5.5em;
+}
+
+.about-round_title .about__title{
+   text-align: center;
+   font-size: 2.5em;
+   color: var(--color-white);
+}
+
+.about-round-wrap .row.secondary{
+   margin-top: 2.5em;
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   align-items: center;
+   gap: var(--gap-padding);
+   margin-bottom: 7em;
+}
+
+.about-round-wrap .row.secondary:last-child{
+   margin-bottom: 1em !important;
+}
+.about__content-subtitle{
+   color: var(--orange);
+}
+.about__content-text{
+   margin-top: 1.1em !important;
+   color: var(--color-white);
+   font-size: 1.8em;
+}
+
+.about__content-image{
+   border-radius: 25px;
 }

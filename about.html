@@ -17,13 +17,14 @@
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
       />
       <link rel="preload" as="font" href="fonts/NeueMontreal-Regular.otf" type="font/otf" crossorigin="anonymous">
-
+      <link rel="shortcut icon" href="assets/favicon-32x32.png" type="image/x-icon">
       <link href="styles/normalize.css" rel="stylesheet">      
       <link href="styles/locomotive-scroll.css" rel="stylesheet">      
       <link href="styles/styleguide.css" rel="stylesheet">      
       <link href="styles/components.css" rel="stylesheet">      
       <!-- <link href="styles/style.css" rel="stylesheet">       -->
       <link href="styles/style-new.css" rel="stylesheet">
+      <link href="styles/responsive.css" rel="stylesheet">
 		<script>
          window.dataLayer = window.dataLayer || [];
          function gtag(){dataLayer.push(arguments);}
@@ -168,13 +169,6 @@ p {
                                 <li class="btn btn-link btn-link-external">
                                     <a href="#" target="_blank" class="btn-click magnetic" data-strength="20" data-strength-text="10">
                                         <span class="btn-text">
-                                            <span class="btn-text-inner">Twitter X</span>
-                                        </span>
-                                    </a>
-                                </li>
-                                <li class="btn btn-link btn-link-external">
-                                    <a href="#" target="_blank" class="btn-click magnetic" data-strength="20" data-strength-text="10">
-                                        <span class="btn-text">
                                             <span class="btn-text-inner">Instagram</span>
                                         </span>
                                     </a>
@@ -210,16 +204,13 @@ p {
                     <div class="header__container">
                         <div class="social__media-container">
                             <a href="#" class="social_btn magnetic" data-strength="20" data-strength-text="10">
-                                <i class="fa-brands fa-x-twitter"></i>
+                                <i class="fa-brands fa-facebook-f"></i>
                             </a>
                             <a href="#" class="social_btn magnetic" data-strength="20" data-strength-text="10">
                                 <i class="fa-brands fa-instagram"></i>
                             </a>
                             <a href="#" class="social_btn magnetic" data-strength="20" data-strength-text="10">
                                 <i class="fa-brands fa-linkedin-in"></i>
-                            </a>
-                            <a href="#" class="social_btn magnetic" data-strength="20" data-strength-text="10">
-                                <i class="fa-brands fa-facebook-f"></i>
                             </a>
                         </div>
                                 
@@ -265,14 +256,23 @@ p {
                                 <div class="flex-col">
                                     <div class="header-above-h4" data-scroll data-scroll-speed="1">
                                     </div>
+                                    <div class="about__badge">
+                                        à porpos nous
+                                    </div>
                                     <h4 class="hero__title">
                                      doukkala<br>mettal
                                     </h4>
+
+                                    <p class="hero__text">
+                                        We're always looking ahead to bring you future-focused product enhancements; but in case you missed any of our big releases from the past few months, here's a look at some of the highlights.
+                                    </p>
                                 </div>
                             </div>
                         </div>
                     </div>
                </section>
+
+               
 
 
 
@@ -281,7 +281,7 @@ p {
                         <div class="row">
                             <div class="flex-col">
                                 <div class="about__title">
-                                <h4>OUR STORY</h4>
+                                <h4>NOTRE HISTOIRE</h4>
                                 </div>
                                 <!-- <div class="btn btn-round" data-scroll data-scroll-speed="2">
                                 <a href="about.html" class="btn-click magnetic " data-strength="100" data-strength-text="50">
@@ -298,53 +298,240 @@ p {
                                     in all sectors of the industry. Infinity Constructions operates
                                     primarily in the Sydney and Melbourne markets.
                                 </h4> -->
-                                <h4 class="span-texts animate">Our clients choose to work with us because of our deep knowledge of the construction industry and the very high standard
-                                    construction we produce. We are a professional, trusted and valued contributor to all stages of the design and construction
-                                    process.</h4>
+                                <h4 class="span-texts animate about__splining">
+                                    Depuis 9 ans, DOUKKALA METAL construit des ponts entre les rêves et la réalité. Fondée par l'expert en construction métallique Mr. HH, notre entreprise familiale est devenue un leader incontesté dans le secteur de la construction métallique grâce à notre engagement envers l'excellence, la sécurité et la satisfaction de nos clients.
+                                </h4>
                                 <!-- <h4 class="span-lines animate" style="margin-top: 25px;">
                                     “We have built our reputation as a quality builder that places
                                     outstanding customer service at the heart of our business. We
                                     are motivated by delivering excellence for our clients.”
                                 </h4> -->
-                                <p class="about__text">Our clients choose to work with us because of our deep knowledge of the construction industry and the very high standard
-                                    construction we produce. We are a professional, trusted and valued contributor to all stages of the design and construction
-                                    process.</p>
-                                <p class="about__text">Our clients choose to work with us because of our deep knowledge of the construction industry and the very high standard
-                                    construction we produce. We are a professional, trusted and valued contributor to all stages of the design and construction
-                                    process.</p>
+                                <p class="about__text">Nous comprenons que les bâtiments métalliques ne sont pas seulement des structures, mais des symboles de force, de durabilité et de créativité. C'est pourquoi nous créons des solutions sur mesure pour chaque projet, en utilisant des matériaux de la plus haute qualité et en travaillant avec une attention obsessionnelle aux détails. Que vous ayez besoin d'une charpente métallique, d'une ossature industrielle, d'une plateforme d'accès ou d'un ouvrage spécial en métal, nous sommes là pour vous.</p>
+                                <p class="about__text">Chez DOUKKALA METAL, nous nous engageons à construire plus que des bâtiments - nous construisons des rêves. Nous sommes fiers de notre travail et nous nous efforçons de faire une différence positive dans la vie de nos clients, en créant des espaces qui les inspirent, les motivent et les protègent. Nous sommes une entreprise qui se soucie de vos besoins, et nous sommes là pour vous aider à les réaliser.</p>
 
                             </div>
 
                         </div>
+                    </div>
+                </section>
 
+
+
+                <section class="section about-round-wrap" data-scroll-section>
+                    <div class="container medium">
+                        <div class="about-round_title">
+                            <div class="about__title">
+                            <h4>OUR Values</h4>
+                            </div>
+                        </div>
                         <div class="row secondary">
-                            <div class="flex-col">
+                            <div class="flex-col reveal">
                                 <img src="assets/Frame-12.webp" class="about__content-image"/>
                             </div>
                             <div class="flex-col">
-                                <ul class="about__content-exp">
-                                    <li>
-                                    <div animate class="num_exp">
-                                            <h3>30</h3>
-                                            <h2>+</h2>
-                                    </div>
-                                    <h2>years experience</h2>
-                                    <div class="stripe animate"></div>
-                                    </li>
-                                    <li>
-                                    <div class="num_exp">
-                                            <h3>500</h3>
-                                            <h2>+</h2>
-                                    </div>
-                                    <h2>projects built</h2>
-                                    <div class="stripe animate"></div>
-                                    </li>
-                                </ul>
+                                <span class="about__content-subtitle">
+                                    Qualité
+                                </span>
+                                <h4 class="about__content-text">
+                                    Safety is everyone’s responsibility
+                                    and will always take priority over all
+                                    other considerations. Safety is at
+                                    the heart of everything that we do.
+                                </h4>
+                            </div>
+                        </div>
+                        <div class="row secondary">
+                            <div class="flex-col">
+                                <span class="about__content-subtitle">
+                                    Professionnalisme
+                                </span>
+                                <h4 class="about__content-text">
+                                    We are accountable for the buildings
+                                    we build, the way we operate and the
+                                    outcome of our actions. Our buildings
+                                    are there for the long-term and we
+                                    respect our clients and those who
+                                    occupy the buildings.
+                                </h4>
+                            </div>
+                            <div class="flex-col reveal">
+                                <img src="assets/Frame-12.webp" class="about__content-image"/>
+                            </div>
+                        </div>
+                        <div class="row secondary">
+                            <div class="flex-col reveal">
+                                <img src="assets/Frame-12.webp" class="about__content-image"/>
+                            </div>
+                            <div class="flex-col">
+                                <span class="about__content-subtitle">
+                                    Intégrité
+                                </span>
+                                <h4 class="about__content-text">
+                                    Our business must always remain
+                                    sustainable. Sustainability is achieved
+                                    when all our processes come
+                                    together to deliver efficiency and
+                                    value.
+                                </h4>
+                            </div>
+                        </div>
+                        <div class="row secondary">
+                            <div class="flex-col">
+                                <span class="about__content-subtitle">
+                                    Innovation
+                                </span>
+                                <h4 class="about__content-text">
+                                    Our business must always remain
+                                    sustainable. Sustainability is achieved
+                                    when all our processes come
+                                    together to deliver efficiency and
+                                    value.
+                                </h4>
+                            </div>
+                            <div class="flex-col reveal">
+                                <img src="assets/Frame-12.webp" class="about__content-image"/>
+                            </div>
+                        </div>
+                        <div class="row secondary">
+                            <div class="flex-col reveal">
+                                <img src="assets/Frame-12.webp" class="about__content-image"/>
+                            </div>
+                            <div class="flex-col">
+                                <span class="about__content-subtitle">
+                                    Responsabilité
+                                </span>
+                                <h4 class="about__content-text">
+                                    Our business must always remain
+                                    sustainable. Sustainability is achieved
+                                    when all our processes come
+                                    together to deliver efficiency and
+                                    value.
+                                </h4>
                             </div>
                         </div>
                     </div>
                 </section>
-                  
+
+
+                <section class="horizontal-items section"  data-scroll-section>
+                    <div class="container">    
+                       <div class="row row-1" data-scroll data-scroll-speed="-1" data-scroll-direction="horizontal">
+                          <div class="flex-col">
+                             <div class="horizontal-single-item">
+                                <div class="overlay lazy" style="background-position: center center; background-repeat: no-repeat; background-size: cover;">
+                                    <div style="width: 100%; height: 100%;background-color: #f1f1f1;border-radius: 12px;border: 1px solid #dadada; display: grid;place-content: center;">
+                                        <img src="assets/clients/EMB.png" style="width: 100%;height: 100%;max-width: 80%; margin-inline: auto;"/>
+                                    </div>
+                                </div>
+                             </div>
+                          </div>
+                          <div class="flex-col">
+                             <div class="horizontal-single-item">
+                                <div class="overlay lazy" style="background-position: center center; background-repeat: no-repeat; background-size: cover;">
+                                    <div style="width: 100%; height: 100%;background-color: #f1f1f1;border-radius: 12px;border: 1px solid #dadada; display: grid;place-content: center;">
+                                        <img src="assets/clients/Z.png" style="width: 100%;height: 100%;max-width: 80%; margin-inline: auto;"/>
+                                    </div>
+                                </div>
+                             </div>
+                          </div>
+                          <div class="flex-col">
+                             <div class="horizontal-single-item">
+                                <div class="overlay lazy" style="background-position: center center; background-repeat: no-repeat; background-size: cover;">
+                                    <div style="width: 100%; height: 100%;background-color: #f1f1f1;border-radius: 12px;border: 1px solid #dadada; display: grid;place-content: center;">
+                                        <img src="assets/clients/carrefour.png" style="width: 100%;height: 100%;max-width: 80%; margin-inline: auto;"/>
+                                    </div>
+                                </div>
+                             </div>
+                          </div>
+                          <div class="flex-col">
+                             <div class="horizontal-single-item">
+                                <div class="overlay lazy" style="background-position: center center; background-repeat: no-repeat; background-size: cover;">
+                                    <div style="width: 100%; height: 100%;background-color: #f1f1f1;border-radius: 12px;border: 1px solid #dadada; display: grid;place-content: center;">
+                                        <img src="assets/clients/CENTRALE.png"  style="width: 100%;height: 100%;max-width: 80%; margin-inline: auto;"/>
+                                    </div>
+                                </div>
+                             </div>
+                          </div>
+                          <div class="flex-col">
+                             <div class="horizontal-single-item">
+                                <div class="overlay lazy" style="background-position: center center; background-repeat: no-repeat; background-size: cover;">
+                                    <div style="width: 100%; height: 100%;background-color: #f1f1f1;border-radius: 12px;border: 1px solid #dadada; display: grid;place-content: center;">
+                                        <img src="assets/clients/ALF SAHEL.png" style="width: 100%;height: 100%;max-width: 80%; margin-inline: auto;"/>
+                                    </div>
+                                </div>
+                             </div>
+                          </div>
+                          <div class="flex-col">
+                             <div class="horizontal-single-item">
+                                <div class="overlay lazy" style="background-position: center center; background-repeat: no-repeat; background-size: cover;">
+                                    <div style="width: 100%; height: 100%;background-color: #f1f1f1;border-radius: 12px;border: 1px solid #dadada; display: grid;place-content: center;">
+                                        <img src="assets/clients/EMB.png" style="width: 100%;height: 100%;max-width: 80%; margin-inline: auto;"/>
+                                    </div>
+                                </div>
+                             </div>
+                          </div>
+                       </div>
+                       <div class="row row-2" data-scroll data-scroll-speed="1" data-scroll-direction="horizontal">
+                          <div class="flex-col">
+                             <div class="horizontal-single-item">
+                                <div class="overlay lazy" style="background-position: center center; background-repeat: no-repeat; background-size: cover;">
+                                    <div style="width: 100%; height: 100%;background-color: #f1f1f1;border-radius: 12px;border: 1px solid #dadada; display: grid;place-content: center;">
+                                        <img src="assets/clients/marjan.png" style="width: 100%;height: 100%;max-width: 80%; margin-inline: auto;"/>
+                                    </div>
+                                </div>
+                             </div>
+                          </div>
+                          <div class="flex-col">
+                             <div class="horizontal-single-item">
+                                <div class="overlay lazy" style="background-position: center center; background-repeat: no-repeat; background-size: cover;">
+                                    <div style="width: 100%; height: 100%;background-color: #f1f1f1;border-radius: 12px;border: 1px solid #dadada; display: grid;place-content: center;">
+                                        <img src="assets/clients/marjan.png" style="width: 100%;height: 100%;max-width: 80%; margin-inline: auto;"/>
+                                    </div>
+                                </div>
+                             </div>
+                          </div>
+                          <div class="flex-col">
+                             <div class="horizontal-single-item">
+                                <div class="overlay lazy" style="background-position: center center; background-repeat: no-repeat; background-size: cover;">
+                                    <div style="width: 100%; height: 100%;background-color: #f1f1f1;border-radius: 12px;border: 1px solid #dadada; display: grid;place-content: center;">
+                                        <img src="assets/clients/ocp.png" style="width: 100%;height: 100%;max-width: 90%; margin-inline: auto;"/>
+                                    </div>
+                                </div>
+                             </div>
+                          </div>
+                          <div class="flex-col">
+                             <div class="horizontal-single-item">
+                                <div class="overlay lazy" style="background-position: center center; background-repeat: no-repeat; background-size: cover;">
+                                    <div style="width: 100%; height: 100%;background-color: #f1f1f1;border-radius: 12px;border: 1px solid #dadada; display: grid;place-content: center;">
+                                        <img src="assets/clients/sika.png" style="width: 100%;height: 100%;max-width: 80%; margin-inline: auto;"/>
+                                    </div>
+                                </div>
+                             </div>
+                          </div>
+                          <div class="flex-col">
+                             <div class="horizontal-single-item">
+                                <div class="overlay lazy" style="background-position: center center; background-repeat: no-repeat; background-size: cover;">
+                                    <div style="width: 100%; height: 100%;background-color: #f1f1f1;border-radius: 12px;border: 1px solid #dadada; display: grid;place-content: center;">
+                                        <img src="assets/clients/TGCC.png" style="width: 100%;height: 100%;max-width: 80%; margin-inline: auto;"/>
+                                    </div>
+                                </div>
+                             </div>
+                          </div>
+                          <div class="flex-col">
+                             <div class="horizontal-single-item">
+                                <div class="overlay lazy" style="background-position: center center; background-repeat: no-repeat; background-size: cover;">
+                                    <div style="width: 100%; height: 100%;background-color: #f1f1f1;border-radius: 12px;border: 1px solid #dadada; display: grid;place-content: center;">
+                                        <img src="assets/clients/mohammed vi.png" style="width: 100%;height: 100%;max-width: 80%; margin-inline: auto;"/>
+                                    </div>
+                                </div>
+                             </div>
+                          </div>
+                       </div>
+                    </div>
+                 </section>
+
+                
+                
 
 
                 <div class="footer-rounded-div" data-scroll-section>
@@ -399,7 +586,7 @@ p {
                                         </a>
                                     </div>
                                     <div class="btn btn-normal">
-                                        <a href="tel:+31627847430" class="btn-click magnetic" data-strength="25" data-strength-text="15">
+                                        <a href="tel:+212 601 02030500" class="btn-click magnetic" data-strength="25" data-strength-text="15">
                                         <div class="btn-fill"></div>
                                         <span class="btn-text">
                                             <span class="btn-text-inner change">+212 601 02030500</span>
@@ -414,20 +601,13 @@ p {
                                 <div class="flex-col">
                                     <div class="credits">
                                         <h5>Edited By</h5>
-                                        <a href="" style="text-transform: uppercase; color: #fff;">WHD Agency</a>
+                                        <a href="https://whd.ma/" style="text-transform: uppercase; color: #fff;">WHD Agency</a>
                                     </div>
                                 </div>
                                 <div class="flex-col">
                                     <div class="socials">
                                         <h5>Socials</h5>
                                         <ul>
-                                            <li class="btn btn-link btn-link-external">
-                                                <a href="#" target="_blank" class="btn-click magnetic" data-strength="20" data-strength-text="10">
-                                                    <span class="btn-text">
-                                                        <span class="btn-text-inner">Twitter X</span>
-                                                    </span>
-                                                </a>
-                                            </li>
                                             <li class="btn btn-link btn-link-external">
                                                 <a href="#" target="_blank" class="btn-click magnetic" data-strength="20" data-strength-text="10">
                                                     <span class="btn-text">
@@ -475,8 +655,6 @@ p {
         <script defer src="js/index-new.js"></script> 
         <script src="https://unpkg.com/split-type"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
-
-       
 
     </body>
 </html>
