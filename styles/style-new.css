@@ -3585,6 +3585,16 @@ main {
    color: var(--color-dark) !important;
  }
 
+ .about__section .hero__icon-qutoe{
+   max-width: max-content;
+   margin-inline: auto;
+   margin-top: 1em;
+ }
+
+ .about__section .hero__icon-qutoe i{
+   color: var(--orange);
+   font-size: 2em;
+ }
  .about__section .hero__text{
    font-weight: 500;
     font-style: normal;
@@ -3594,7 +3604,14 @@ main {
     max-width: 70ch;
     margin-inline: auto;
     text-align: center;
-    margin-top: 2em;
+    margin-top: 1em;
+ }
+
+ .about__section .hero__text.author_name,
+ .about__section .hero__text.author_job{
+   margin-bottom: .2em;
+   margin-top: .2em;
+   font-weight: 600;
  }
 
 
