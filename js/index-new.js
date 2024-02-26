@@ -1090,8 +1090,6 @@ function initScrollLetters() {
 
 }
 
-
-
 /**
 * Scrolltrigger Nav
 */
@@ -1257,10 +1255,6 @@ function initScrolltriggerAnimations() {
   });
   }
 
-  if(document.querySelector(".home-intro")){
-    
-  }
-
   // Scrolltrigger Animation : Span Lines Intro Home
   if(document.querySelector(".span-lines.animate")) {
   $(".span-lines.animate").each(function (index) {
@@ -1287,33 +1281,7 @@ function initScrolltriggerAnimations() {
     }
   });
   }
-  
-  if(document.querySelector(".span-texts.animate")) {
-  $(".span-texts.animate").each(function (index) {
-    
-    let triggerElement = $(this);
-    let targetElement = $(".span-texts.animate .span-text-inner");
 
-    let tl = gsap.timeline({
-      scrollTrigger: {
-        trigger: triggerElement,
-        toggleActions:'play none none reset', 
-        start: "0% 100%",
-        end: "100% 0%"
-      }
-    });
-    
-    if(targetElement) {
-      tl.from(targetElement, {
-        y: "100%",
-        stagger: .01,
-        ease: "power3.out",
-        duration: 1,
-        delay: 0
-      });
-    }
-  });
-  }
 
   // if(document.querySelector(".page_transition"))
   // {
@@ -1348,68 +1316,7 @@ function initScrolltriggerAnimations() {
   //   //     backgroundColor:"#fff"
   //   // })
   // }
-  if(document.querySelector(".page_transition"))
-  {
-    $(".page_transition").each(function (index) {
-      var n = gsap.timeline();
-      let triggerElement = $(this);
-      let targetElement = $(".page_transition .page1");
-      let tl = gsap.timeline({
-        scrollTrigger: {
-          trigger: triggerElement,
-          toggleActions:'play none none reset', 
-          start: "0 100%",
-          end: "100% 0",
-          scrub: 3
-        }
-      }); 
-      ScrollTrigger.create({
-        trigger: ".page1 .content",
-        start: "top top",
-        pinnedContainer: ".page1",
-        pinType: "transform",
-        onRefreshInit: (e) => e.scroll(0),
-        pin: !0,
-        end: () => document.querySelector(".page_transition video").clientHeight,
-      }),
-    n.to(".page_transition video", {
-      scaleX: 1,
-      scaleY: 1,
-      scrollTrigger: {
-        trigger: ".page1",
-        start: "top top",
-        ease: "expo.inOut",
-        scrub: !0,
-        end: "70% 50%",
-      },
-    }),
-      gsap.to(".page1 .content", {
-        opacity: 1,
-        filter: "blur(5px)",
-        scrollTrigger: {
-          trigger: ".page1",
-          start: "top top",
-          ease: "expo.inOut",
-          scrub: !0,
-          end: () => document.querySelector(".page_transition video").clientHeight,
-        },
-      });
-    tl.to(".page1 h1", {
-        duration: .2,
-        x: -150,
-    }, "anim")
-    tl.to(".page1 h2", {
-        x: 150
-    }, "anim")
-      tl.to(".page_transition video", {
-        y: -100,
-      }, "anim")
-
-      
-    })
-
-    
-  }
+ 
 
   if(document.querySelector(".fade-in.animate")) {
   // Scrolltrigger Animation : Fade in
@@ -1488,6 +1395,69 @@ function initScrolltriggerAnimations() {
           ease: "none"
         }, 0);
       });
+      }
+
+      if(document.querySelector(".page_transition"))
+      {
+        $(".page_transition").each(function (index) {
+          var n = gsap.timeline();
+          let triggerElement = $(this);
+          let targetElement = $(".page_transition .page1");
+          let tl = gsap.timeline({
+            scrollTrigger: {
+              trigger: triggerElement,
+              toggleActions:'play none none reset', 
+              start: "0 100%",
+              end: "100% 0",
+              scrub: 3
+            }
+          }); 
+          ScrollTrigger.create({
+            trigger: ".page1 .content",
+            start: "top top",
+            pinnedContainer: ".page1",
+            pinType: "transform",
+            onRefreshInit: (e) => e.scroll(0),
+            pin: !0,
+            end: () => document.querySelector(".page_transition video").clientHeight,
+          }),
+        n.to(".page_transition video", {
+          scaleX: 1,
+          scaleY: 1,
+          scrollTrigger: {
+            trigger: ".page1",
+            start: "top top",
+            ease: "expo.inOut",
+            scrub: !0,
+            end: "70% 50%",
+          },
+        }),
+          gsap.to(".page1 .content", {
+            opacity: 1,
+            filter: "blur(5px)",
+            scrollTrigger: {
+              trigger: ".page1",
+              start: "top top",
+              ease: "expo.inOut",
+              scrub: !0,
+              end: () => document.querySelector(".page_transition video").clientHeight,
+            },
+          });
+        tl.to(".page1 h1", {
+            duration: .2,
+            x: -150,
+        }, "anim")
+        tl.to(".page1 h2", {
+            x: 150
+        }, "anim")
+          tl.to(".page_transition video", {
+            y: -100,
+          }, "anim")
+    
+          
+        })
+    
+        
       }
       
       if(document.querySelector(".footer-footer-wrap")) {
