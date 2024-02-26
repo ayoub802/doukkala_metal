@@ -191,7 +191,7 @@ main {
 }
 
 .page_transition video{
-   width: 90%;
+   width: 95%;
    position: relative;
    z-index: 100;
    transform: top center;
@@ -1837,6 +1837,14 @@ main {
     padding-right: calc(var(--container-padding) * .25);
  }
  
+ .work-tiles ul li .single-tile-wrap .flex-col.justify-bet{
+   justify-content: space-between;
+   align-items: center;
+   width: 100%;
+   display: flex;
+   flex-direction: row;
+   padding-bottom: 0 !important;
+ }
  .work-tiles ul li a { 
     align-items: center;
     color: unset;
@@ -3715,4 +3723,12 @@ main {
 
 .about__content-image{
    border-radius: 25px;
+}
+
+.about__splining{
+   font-size: 1.5em !important;
+}
+
+.large-work-grid .work-items p{
+   text-transform: capitalize !important;
 }

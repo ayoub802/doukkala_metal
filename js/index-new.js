@@ -1639,13 +1639,13 @@ var swiper = new Swiper(".swiper", {
     prevEl: ".swiper_button-prev",
   },
   speed: 1000, // Set the duration in milliseconds
-  // autoplay: {
-  //   delay: 5000,
-  //   disableOnInteraction: false,
-  // },
-  // mousewheel: {
-  //   enabled: false,
-  // },
+  autoplay: {
+    delay: 5000,
+    disableOnInteraction: false,
+  },
+  mousewheel: {
+    enabled: false,
+  },
 });
 }
 

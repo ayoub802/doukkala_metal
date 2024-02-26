@@ -334,4 +334,8 @@
     .horizontal-items .row-2 .flex-col:nth-child(3), .horizontal-items .row-2 .flex-col:nth-child(4){
         display: block !important;
     }
+
+    .horizontal-items .horizontal-single-item img{
+        max-width: 55% !important;
+    }
 }
